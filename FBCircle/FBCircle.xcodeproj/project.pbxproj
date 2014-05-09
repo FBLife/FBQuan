@@ -19,16 +19,38 @@
 		199A01F71918D1DF0081F51D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199A01DF1918D1DF0081F51D /* UIKit.framework */; };
 		199A01FF1918D1DF0081F51D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 199A01FD1918D1DF0081F51D /* InfoPlist.strings */; };
 		199A02011918D1DF0081F51D /* FBCircleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 199A02001918D1DF0081F51D /* FBCircleTests.m */; };
-		199A020C1918D7390081F51D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 199A020B1918D7390081F51D /* MainViewController.m */; };
 		199A02101918DA130081F51D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 199A020F1918DA130081F51D /* LoginViewController.m */; };
 		199A02131918DA5F0081F51D /* FriendListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 199A02121918DA5F0081F51D /* FriendListViewController.m */; };
 		199A02161918DA8E0081F51D /* NewFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 199A02151918DA8E0081F51D /* NewFriendViewController.m */; };
-		199A021B1919CD420081F51D /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 199A021A1919CD420081F51D /* LeftViewController.m */; };
-		199A021E1919CD6C0081F51D /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 199A021D1919CD6C0081F51D /* RightViewController.m */; };
 		199A0228191A11F90081F51D /* SzkAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 199A0227191A11F90081F51D /* SzkAPI.m */; };
 		199A022A191A13150081F51D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199A0229191A13150081F51D /* AddressBook.framework */; };
 		199A022C191A131C0081F51D /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199A022B191A131C0081F51D /* AddressBookUI.framework */; };
 		199A026D191B7EC60081F51D /* SzkLoadData.m in Sources */ = {isa = PBXBuildFile; fileRef = 199A026C191B7EC60081F51D /* SzkLoadData.m */; };
+		5658FB06191CD0050016D038 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB01191CD0050016D038 /* MainViewController.m */; };
+		5658FB07191CD0050016D038 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB01191CD0050016D038 /* MainViewController.m */; };
+		5658FB08191CD0050016D038 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB02191CD0050016D038 /* RightViewController.m */; };
+		5658FB09191CD0050016D038 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB02191CD0050016D038 /* RightViewController.m */; };
+		5658FB0A191CD0050016D038 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB04191CD0050016D038 /* LeftViewController.m */; };
+		5658FB0B191CD0050016D038 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB04191CD0050016D038 /* LeftViewController.m */; };
+		5658FB44191CD3CD0016D038 /* QBAssetCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB33191CD3CD0016D038 /* QBAssetCollectionViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5658FB45191CD3CD0016D038 /* QBAssetCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB33191CD3CD0016D038 /* QBAssetCollectionViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5658FB46191CD3CD0016D038 /* QBImagePickerAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB36191CD3CD0016D038 /* QBImagePickerAssetCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5658FB47191CD3CD0016D038 /* QBImagePickerAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB36191CD3CD0016D038 /* QBImagePickerAssetCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5658FB48191CD3CD0016D038 /* QBImagePickerAssetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB39191CD3CD0016D038 /* QBImagePickerAssetView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5658FB49191CD3CD0016D038 /* QBImagePickerAssetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB39191CD3CD0016D038 /* QBImagePickerAssetView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5658FB4A191CD3CD0016D038 /* QBImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5658FB3B191CD3CD0016D038 /* QBImagePickerController.bundle */; };
+		5658FB4B191CD3CD0016D038 /* QBImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5658FB3B191CD3CD0016D038 /* QBImagePickerController.bundle */; };
+		5658FB4C191CD3CD0016D038 /* QBImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB3D191CD3CD0016D038 /* QBImagePickerController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5658FB4D191CD3CD0016D038 /* QBImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB3D191CD3CD0016D038 /* QBImagePickerController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5658FB4E191CD3CD0016D038 /* QBImagePickerFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB3F191CD3CD0016D038 /* QBImagePickerFooterView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5658FB4F191CD3CD0016D038 /* QBImagePickerFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB3F191CD3CD0016D038 /* QBImagePickerFooterView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5658FB50191CD3CD0016D038 /* QBImagePickerGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB41191CD3CD0016D038 /* QBImagePickerGroupCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5658FB51191CD3CD0016D038 /* QBImagePickerGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB41191CD3CD0016D038 /* QBImagePickerGroupCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5658FB52191CD3CD0016D038 /* QBImagePickerVideoInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB43191CD3CD0016D038 /* QBImagePickerVideoInfoView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5658FB53191CD3CD0016D038 /* QBImagePickerVideoInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB43191CD3CD0016D038 /* QBImagePickerVideoInfoView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5658FB57191CD4C20016D038 /* WriteBlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB56191CD4C20016D038 /* WriteBlogViewController.m */; };
+		5658FB58191CD4C20016D038 /* WriteBlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB56191CD4C20016D038 /* WriteBlogViewController.m */; };
+		5658FB5A191CD5770016D038 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5658FB59191CD5770016D038 /* AssetsLibrary.framework */; };
 		CFB1EC5CCA004D43AB37F42F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA336E5564984EDCBE0DB938 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -59,24 +81,45 @@
 		199A01FC1918D1DF0081F51D /* FBCircleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FBCircleTests-Info.plist"; sourceTree = "<group>"; };
 		199A01FE1918D1DF0081F51D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		199A02001918D1DF0081F51D /* FBCircleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBCircleTests.m; sourceTree = "<group>"; };
-		199A020A1918D7390081F51D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ../../FBCircle/MainViewController.h; sourceTree = "<group>"; };
-		199A020B1918D7390081F51D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ../../FBCircle/MainViewController.m; sourceTree = "<group>"; };
 		199A020E1918DA130081F51D /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		199A020F1918DA130081F51D /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		199A02111918DA5F0081F51D /* FriendListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendListViewController.h; sourceTree = "<group>"; };
 		199A02121918DA5F0081F51D /* FriendListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendListViewController.m; sourceTree = "<group>"; };
 		199A02141918DA8E0081F51D /* NewFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewFriendViewController.h; sourceTree = "<group>"; };
 		199A02151918DA8E0081F51D /* NewFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewFriendViewController.m; sourceTree = "<group>"; };
-		199A02191919CD420081F51D /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeftViewController.h; path = ../LeftViewController.h; sourceTree = "<group>"; };
-		199A021A1919CD420081F51D /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeftViewController.m; path = ../LeftViewController.m; sourceTree = "<group>"; };
-		199A021C1919CD6C0081F51D /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RightViewController.h; path = ../RightViewController.h; sourceTree = "<group>"; };
-		199A021D1919CD6C0081F51D /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RightViewController.m; path = ../RightViewController.m; sourceTree = "<group>"; };
 		199A0226191A11F90081F51D /* SzkAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SzkAPI.h; sourceTree = "<group>"; };
 		199A0227191A11F90081F51D /* SzkAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SzkAPI.m; sourceTree = "<group>"; };
 		199A0229191A13150081F51D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		199A022B191A131C0081F51D /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		199A026B191B7EC60081F51D /* SzkLoadData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SzkLoadData.h; sourceTree = "<group>"; };
 		199A026C191B7EC60081F51D /* SzkLoadData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SzkLoadData.m; sourceTree = "<group>"; };
+		5658FB00191CD0050016D038 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		5658FB01191CD0050016D038 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		5658FB02191CD0050016D038 /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightViewController.m; sourceTree = "<group>"; };
+		5658FB03191CD0050016D038 /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightViewController.h; sourceTree = "<group>"; };
+		5658FB04191CD0050016D038 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		5658FB05191CD0050016D038 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		5658FB32191CD3CD0016D038 /* QBAssetCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAssetCollectionViewController.h; sourceTree = "<group>"; };
+		5658FB33191CD3CD0016D038 /* QBAssetCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBAssetCollectionViewController.m; sourceTree = "<group>"; };
+		5658FB34191CD3CD0016D038 /* QBAssetCollectionViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAssetCollectionViewControllerDelegate.h; sourceTree = "<group>"; };
+		5658FB35191CD3CD0016D038 /* QBImagePickerAssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerAssetCell.h; sourceTree = "<group>"; };
+		5658FB36191CD3CD0016D038 /* QBImagePickerAssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBImagePickerAssetCell.m; sourceTree = "<group>"; };
+		5658FB37191CD3CD0016D038 /* QBImagePickerAssetCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerAssetCellDelegate.h; sourceTree = "<group>"; };
+		5658FB38191CD3CD0016D038 /* QBImagePickerAssetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerAssetView.h; sourceTree = "<group>"; };
+		5658FB39191CD3CD0016D038 /* QBImagePickerAssetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBImagePickerAssetView.m; sourceTree = "<group>"; };
+		5658FB3A191CD3CD0016D038 /* QBImagePickerAssetViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerAssetViewDelegate.h; sourceTree = "<group>"; };
+		5658FB3B191CD3CD0016D038 /* QBImagePickerController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = QBImagePickerController.bundle; sourceTree = "<group>"; };
+		5658FB3C191CD3CD0016D038 /* QBImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerController.h; sourceTree = "<group>"; };
+		5658FB3D191CD3CD0016D038 /* QBImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBImagePickerController.m; sourceTree = "<group>"; };
+		5658FB3E191CD3CD0016D038 /* QBImagePickerFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerFooterView.h; sourceTree = "<group>"; };
+		5658FB3F191CD3CD0016D038 /* QBImagePickerFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBImagePickerFooterView.m; sourceTree = "<group>"; };
+		5658FB40191CD3CD0016D038 /* QBImagePickerGroupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerGroupCell.h; sourceTree = "<group>"; };
+		5658FB41191CD3CD0016D038 /* QBImagePickerGroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBImagePickerGroupCell.m; sourceTree = "<group>"; };
+		5658FB42191CD3CD0016D038 /* QBImagePickerVideoInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerVideoInfoView.h; sourceTree = "<group>"; };
+		5658FB43191CD3CD0016D038 /* QBImagePickerVideoInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBImagePickerVideoInfoView.m; sourceTree = "<group>"; };
+		5658FB55191CD4C20016D038 /* WriteBlogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteBlogViewController.h; sourceTree = "<group>"; };
+		5658FB56191CD4C20016D038 /* WriteBlogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WriteBlogViewController.m; sourceTree = "<group>"; };
+		5658FB59191CD5770016D038 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		8B611DE4DD6843ADB67DE824 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		FA336E5564984EDCBE0DB938 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -99,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5658FB5A191CD5770016D038 /* AssetsLibrary.framework in Frameworks */,
 				199A01F51918D1DF0081F51D /* XCTest.framework in Frameworks */,
 				199A01F71918D1DF0081F51D /* UIKit.framework in Frameworks */,
 				199A01F61918D1DF0081F51D /* Foundation.framework in Frameworks */,
@@ -131,6 +175,7 @@
 		199A01DA1918D1DF0081F51D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5658FB59191CD5770016D038 /* AssetsLibrary.framework */,
 				199A022B191A131C0081F51D /* AddressBookUI.framework */,
 				199A0229191A13150081F51D /* AddressBook.framework */,
 				199A01DB1918D1DF0081F51D /* Foundation.framework */,
@@ -145,6 +190,7 @@
 		199A01E11918D1DF0081F51D /* FBCircle */ = {
 			isa = PBXGroup;
 			children = (
+				5658FB2F191CD3640016D038 /* ZSNController */,
 				199A0225191A11C40081F51D /* PersonalApi */,
 				199A0224191A11B00081F51D /* Public */,
 				199A02231919E8B10081F51D /* Resources */,
@@ -191,6 +237,12 @@
 		199A020D1918D7760081F51D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5658FB00191CD0050016D038 /* MainViewController.h */,
+				5658FB01191CD0050016D038 /* MainViewController.m */,
+				5658FB02191CD0050016D038 /* RightViewController.m */,
+				5658FB03191CD0050016D038 /* RightViewController.h */,
+				5658FB04191CD0050016D038 /* LeftViewController.m */,
+				5658FB05191CD0050016D038 /* LeftViewController.h */,
 				199A021F1919D81B0081F51D /* RootV */,
 				199A020E1918DA130081F51D /* LoginViewController.h */,
 				199A020F1918DA130081F51D /* LoginViewController.m */,
@@ -220,12 +272,6 @@
 		199A021F1919D81B0081F51D /* RootV */ = {
 			isa = PBXGroup;
 			children = (
-				199A02191919CD420081F51D /* LeftViewController.h */,
-				199A021A1919CD420081F51D /* LeftViewController.m */,
-				199A021C1919CD6C0081F51D /* RightViewController.h */,
-				199A021D1919CD6C0081F51D /* RightViewController.m */,
-				199A020A1918D7390081F51D /* MainViewController.h */,
-				199A020B1918D7390081F51D /* MainViewController.m */,
 			);
 			path = RootV;
 			sourceTree = "<group>";
@@ -253,6 +299,57 @@
 				199A026C191B7EC60081F51D /* SzkLoadData.m */,
 			);
 			path = PersonalApi;
+			sourceTree = "<group>";
+		};
+		5658FB2F191CD3640016D038 /* ZSNController */ = {
+			isa = PBXGroup;
+			children = (
+				5658FB54191CD4B00016D038 /* WriteBlogControllers */,
+				5658FB30191CD3CD0016D038 /* publicClasses */,
+			);
+			path = ZSNController;
+			sourceTree = SOURCE_ROOT;
+		};
+		5658FB30191CD3CD0016D038 /* publicClasses */ = {
+			isa = PBXGroup;
+			children = (
+				5658FB31191CD3CD0016D038 /* TakePhotos */,
+			);
+			path = publicClasses;
+			sourceTree = "<group>";
+		};
+		5658FB31191CD3CD0016D038 /* TakePhotos */ = {
+			isa = PBXGroup;
+			children = (
+				5658FB32191CD3CD0016D038 /* QBAssetCollectionViewController.h */,
+				5658FB33191CD3CD0016D038 /* QBAssetCollectionViewController.m */,
+				5658FB34191CD3CD0016D038 /* QBAssetCollectionViewControllerDelegate.h */,
+				5658FB35191CD3CD0016D038 /* QBImagePickerAssetCell.h */,
+				5658FB36191CD3CD0016D038 /* QBImagePickerAssetCell.m */,
+				5658FB37191CD3CD0016D038 /* QBImagePickerAssetCellDelegate.h */,
+				5658FB38191CD3CD0016D038 /* QBImagePickerAssetView.h */,
+				5658FB39191CD3CD0016D038 /* QBImagePickerAssetView.m */,
+				5658FB3A191CD3CD0016D038 /* QBImagePickerAssetViewDelegate.h */,
+				5658FB3B191CD3CD0016D038 /* QBImagePickerController.bundle */,
+				5658FB3C191CD3CD0016D038 /* QBImagePickerController.h */,
+				5658FB3D191CD3CD0016D038 /* QBImagePickerController.m */,
+				5658FB3E191CD3CD0016D038 /* QBImagePickerFooterView.h */,
+				5658FB3F191CD3CD0016D038 /* QBImagePickerFooterView.m */,
+				5658FB40191CD3CD0016D038 /* QBImagePickerGroupCell.h */,
+				5658FB41191CD3CD0016D038 /* QBImagePickerGroupCell.m */,
+				5658FB42191CD3CD0016D038 /* QBImagePickerVideoInfoView.h */,
+				5658FB43191CD3CD0016D038 /* QBImagePickerVideoInfoView.m */,
+			);
+			path = TakePhotos;
+			sourceTree = "<group>";
+		};
+		5658FB54191CD4B00016D038 /* WriteBlogControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5658FB55191CD4C20016D038 /* WriteBlogViewController.h */,
+				5658FB56191CD4C20016D038 /* WriteBlogViewController.m */,
+			);
+			path = WriteBlogControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +429,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5658FB4A191CD3CD0016D038 /* QBImagePickerController.bundle in Resources */,
 				199A01E61918D1DF0081F51D /* InfoPlist.strings in Resources */,
 				199A01EE1918D1DF0081F51D /* Images.xcassets in Resources */,
 			);
@@ -341,6 +439,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5658FB4B191CD3CD0016D038 /* QBImagePickerController.bundle in Resources */,
 				199A01FF1918D1DF0081F51D /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,15 +485,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				199A0228191A11F90081F51D /* SzkAPI.m in Sources */,
+				5658FB0A191CD0050016D038 /* LeftViewController.m in Sources */,
 				199A02101918DA130081F51D /* LoginViewController.m in Sources */,
 				199A02131918DA5F0081F51D /* FriendListViewController.m in Sources */,
+				5658FB50191CD3CD0016D038 /* QBImagePickerGroupCell.m in Sources */,
+				5658FB06191CD0050016D038 /* MainViewController.m in Sources */,
 				199A01EC1918D1DF0081F51D /* AppDelegate.m in Sources */,
-				199A020C1918D7390081F51D /* MainViewController.m in Sources */,
-				199A021B1919CD420081F51D /* LeftViewController.m in Sources */,
+				5658FB44191CD3CD0016D038 /* QBAssetCollectionViewController.m in Sources */,
+				5658FB08191CD0050016D038 /* RightViewController.m in Sources */,
+				5658FB52191CD3CD0016D038 /* QBImagePickerVideoInfoView.m in Sources */,
+				5658FB57191CD4C20016D038 /* WriteBlogViewController.m in Sources */,
+				5658FB4C191CD3CD0016D038 /* QBImagePickerController.m in Sources */,
+				5658FB4E191CD3CD0016D038 /* QBImagePickerFooterView.m in Sources */,
 				199A026D191B7EC60081F51D /* SzkLoadData.m in Sources */,
-				199A021E1919CD6C0081F51D /* RightViewController.m in Sources */,
 				199A01E81918D1DF0081F51D /* main.m in Sources */,
 				199A02161918DA8E0081F51D /* NewFriendViewController.m in Sources */,
+				5658FB46191CD3CD0016D038 /* QBImagePickerAssetCell.m in Sources */,
+				5658FB48191CD3CD0016D038 /* QBImagePickerAssetView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +510,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				199A02011918D1DF0081F51D /* FBCircleTests.m in Sources */,
+				5658FB0B191CD0050016D038 /* LeftViewController.m in Sources */,
+				5658FB53191CD3CD0016D038 /* QBImagePickerVideoInfoView.m in Sources */,
+				5658FB49191CD3CD0016D038 /* QBImagePickerAssetView.m in Sources */,
+				5658FB45191CD3CD0016D038 /* QBAssetCollectionViewController.m in Sources */,
+				5658FB51191CD3CD0016D038 /* QBImagePickerGroupCell.m in Sources */,
+				5658FB4D191CD3CD0016D038 /* QBImagePickerController.m in Sources */,
+				5658FB07191CD0050016D038 /* MainViewController.m in Sources */,
+				5658FB4F191CD3CD0016D038 /* QBImagePickerFooterView.m in Sources */,
+				5658FB09191CD0050016D038 /* RightViewController.m in Sources */,
+				5658FB58191CD4C20016D038 /* WriteBlogViewController.m in Sources */,
+				5658FB47191CD3CD0016D038 /* QBImagePickerAssetCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
