@@ -5,54 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-<<<<<<< HEAD
-	<string>9130D484-7625-4F9D-A1C2-79CAB30CCF1F</string>
-=======
-	<string>2946D95C-42D0-4888-B963-016BFF97CD60</string>
->>>>>>> FETCH_HEAD
+	<string>44878D3B-EE8D-4566-9BBC-280D91CF7D9A</string>
 	<key>IDESourceControlProjectName</key>
 	<string>FBCircle</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-<<<<<<< HEAD
-		<key>D25B33F7-B153-4445-A77D-16EA44BBD6C7</key>
-=======
 		<key>C07CEB59-60D1-405C-9FB3-3D3C62DEC715</key>
->>>>>>> FETCH_HEAD
 		<string>https://github.com/FBLife/FBQuan.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>FBCircle/FBCircle.xcworkspace</string>
+	<string>FBCircle/FBCircle.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-<<<<<<< HEAD
-		<key>D25B33F7-B153-4445-A77D-16EA44BBD6C7</key>
-=======
 		<key>C07CEB59-60D1-405C-9FB3-3D3C62DEC715</key>
->>>>>>> FETCH_HEAD
-		<string>../..</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/FBLife/FBQuan.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-<<<<<<< HEAD
-	<string>D25B33F7-B153-4445-A77D-16EA44BBD6C7</string>
-=======
 	<string>C07CEB59-60D1-405C-9FB3-3D3C62DEC715</string>
->>>>>>> FETCH_HEAD
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-<<<<<<< HEAD
-			<string>D25B33F7-B153-4445-A77D-16EA44BBD6C7</string>
-=======
 			<string>C07CEB59-60D1-405C-9FB3-3D3C62DEC715</string>
->>>>>>> FETCH_HEAD
 			<key>IDESourceControlWCCName</key>
 			<string>FBQuan</string>
 		</dict>
