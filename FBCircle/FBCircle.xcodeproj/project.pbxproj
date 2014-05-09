@@ -190,7 +190,7 @@
 		199A01E11918D1DF0081F51D /* FBCircle */ = {
 			isa = PBXGroup;
 			children = (
-				5658FB2F191CD3640016D038 /* ZSNController */,
+				5658FB2F191CD3640016D038 /* ZSN */,
 				199A0225191A11C40081F51D /* PersonalApi */,
 				199A0224191A11B00081F51D /* Public */,
 				199A02231919E8B10081F51D /* Resources */,
@@ -301,12 +301,13 @@
 			path = PersonalApi;
 			sourceTree = "<group>";
 		};
-		5658FB2F191CD3640016D038 /* ZSNController */ = {
+		5658FB2F191CD3640016D038 /* ZSN */ = {
 			isa = PBXGroup;
 			children = (
 				5658FB54191CD4B00016D038 /* WriteBlogControllers */,
 				5658FB30191CD3CD0016D038 /* publicClasses */,
 			);
+			name = ZSN;
 			path = ZSNController;
 			sourceTree = SOURCE_ROOT;
 		};
