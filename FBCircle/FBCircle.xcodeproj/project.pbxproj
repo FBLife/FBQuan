@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19431F00191DE2FE006C58DB /* FbLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19431EFF191DE2FE006C58DB /* FbLoginView.m */; };
 		199A01DC1918D1DF0081F51D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199A01DB1918D1DF0081F51D /* Foundation.framework */; };
 		199A01DE1918D1DF0081F51D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199A01DD1918D1DF0081F51D /* CoreGraphics.framework */; };
 		199A01E01918D1DF0081F51D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199A01DF1918D1DF0081F51D /* UIKit.framework */; };
@@ -26,6 +27,9 @@
 		199A022A191A13150081F51D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199A0229191A13150081F51D /* AddressBook.framework */; };
 		199A022C191A131C0081F51D /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199A022B191A131C0081F51D /* AddressBookUI.framework */; };
 		199A026D191B7EC60081F51D /* SzkLoadData.m in Sources */ = {isa = PBXBuildFile; fileRef = 199A026C191B7EC60081F51D /* SzkLoadData.m */; };
+		19A0B1C4191E42B400E08E1C /* FbRegistCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A0B1C3191E42B400E08E1C /* FbRegistCell.m */; };
+		19A0B1C7191E626C00E08E1C /* RegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A0B1C6191E626C00E08E1C /* RegistViewController.m */; };
+		19A0B1CA191E62E800E08E1C /* FBQuanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A0B1C9191E62E800E08E1C /* FBQuanViewController.m */; };
 		5658FB06191CD0050016D038 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB01191CD0050016D038 /* MainViewController.m */; };
 		5658FB07191CD0050016D038 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB01191CD0050016D038 /* MainViewController.m */; };
 		5658FB08191CD0050016D038 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB02191CD0050016D038 /* RightViewController.m */; };
@@ -65,6 +69,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19431EFE191DE2FE006C58DB /* FbLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FbLoginView.h; sourceTree = "<group>"; };
+		19431EFF191DE2FE006C58DB /* FbLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FbLoginView.m; sourceTree = "<group>"; };
+		19431F01191DE7B3006C58DB /* FBQuanAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBQuanAPI.h; sourceTree = "<group>"; };
 		199A01D81918D1DF0081F51D /* FBCircle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBCircle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		199A01DB1918D1DF0081F51D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		199A01DD1918D1DF0081F51D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -93,6 +100,12 @@
 		199A022B191A131C0081F51D /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		199A026B191B7EC60081F51D /* SzkLoadData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SzkLoadData.h; sourceTree = "<group>"; };
 		199A026C191B7EC60081F51D /* SzkLoadData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SzkLoadData.m; sourceTree = "<group>"; };
+		19A0B1C2191E42B400E08E1C /* FbRegistCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FbRegistCell.h; sourceTree = "<group>"; };
+		19A0B1C3191E42B400E08E1C /* FbRegistCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FbRegistCell.m; sourceTree = "<group>"; };
+		19A0B1C5191E626C00E08E1C /* RegistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistViewController.h; sourceTree = "<group>"; };
+		19A0B1C6191E626C00E08E1C /* RegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistViewController.m; sourceTree = "<group>"; };
+		19A0B1C8191E62E800E08E1C /* FBQuanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBQuanViewController.h; sourceTree = "<group>"; };
+		19A0B1C9191E62E800E08E1C /* FBQuanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBQuanViewController.m; sourceTree = "<group>"; };
 		5658FB00191CD0050016D038 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		5658FB01191CD0050016D038 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		5658FB02191CD0050016D038 /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightViewController.m; sourceTree = "<group>"; };
@@ -246,6 +259,8 @@
 				199A021F1919D81B0081F51D /* RootV */,
 				199A020E1918DA130081F51D /* LoginViewController.h */,
 				199A020F1918DA130081F51D /* LoginViewController.m */,
+				19A0B1C5191E626C00E08E1C /* RegistViewController.h */,
+				19A0B1C6191E626C00E08E1C /* RegistViewController.m */,
 				199A02111918DA5F0081F51D /* FriendListViewController.h */,
 				199A02121918DA5F0081F51D /* FriendListViewController.m */,
 				199A02141918DA8E0081F51D /* NewFriendViewController.h */,
@@ -258,6 +273,10 @@
 		199A02171918E0C30081F51D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				19431EFE191DE2FE006C58DB /* FbLoginView.h */,
+				19431EFF191DE2FE006C58DB /* FbLoginView.m */,
+				19A0B1C2191E42B400E08E1C /* FbRegistCell.h */,
+				19A0B1C3191E42B400E08E1C /* FbRegistCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -286,6 +305,9 @@
 		199A0224191A11B00081F51D /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				19431F01191DE7B3006C58DB /* FBQuanAPI.h */,
+				19A0B1C8191E62E800E08E1C /* FBQuanViewController.h */,
+				19A0B1C9191E62E800E08E1C /* FBQuanViewController.m */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -488,10 +510,12 @@
 				199A0228191A11F90081F51D /* SzkAPI.m in Sources */,
 				5658FB0A191CD0050016D038 /* LeftViewController.m in Sources */,
 				199A02101918DA130081F51D /* LoginViewController.m in Sources */,
+				19A0B1C4191E42B400E08E1C /* FbRegistCell.m in Sources */,
 				199A02131918DA5F0081F51D /* FriendListViewController.m in Sources */,
 				5658FB50191CD3CD0016D038 /* QBImagePickerGroupCell.m in Sources */,
 				5658FB06191CD0050016D038 /* MainViewController.m in Sources */,
 				199A01EC1918D1DF0081F51D /* AppDelegate.m in Sources */,
+				19A0B1C7191E626C00E08E1C /* RegistViewController.m in Sources */,
 				5658FB44191CD3CD0016D038 /* QBAssetCollectionViewController.m in Sources */,
 				5658FB08191CD0050016D038 /* RightViewController.m in Sources */,
 				5658FB52191CD3CD0016D038 /* QBImagePickerVideoInfoView.m in Sources */,
@@ -500,6 +524,8 @@
 				5658FB4E191CD3CD0016D038 /* QBImagePickerFooterView.m in Sources */,
 				199A026D191B7EC60081F51D /* SzkLoadData.m in Sources */,
 				199A01E81918D1DF0081F51D /* main.m in Sources */,
+				19A0B1CA191E62E800E08E1C /* FBQuanViewController.m in Sources */,
+				19431F00191DE2FE006C58DB /* FbLoginView.m in Sources */,
 				199A02161918DA8E0081F51D /* NewFriendViewController.m in Sources */,
 				5658FB46191CD3CD0016D038 /* QBImagePickerAssetCell.m in Sources */,
 				5658FB48191CD3CD0016D038 /* QBImagePickerAssetView.m in Sources */,

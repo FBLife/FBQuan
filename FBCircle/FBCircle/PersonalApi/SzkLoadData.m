@@ -4,7 +4,8 @@
 //
 //  Created by 史忠坤 on 14-5-8.
 //  Copyright (c) 2014年 szk. All rights reserved.
-//
+//errcode 0代表没有错误，1代表网络连接错误，2代表数据格式错误
+
 
 #import "SzkLoadData.h"
 
@@ -50,18 +51,18 @@
     if ([[self.mydicinfo objectForKey:@"errcode"] integerValue]==0) {
         NSArray *array_=[self.mydicinfo objectForKey:@"datainfo"];
         
-        _testBlocksbl(array_,@"noerror");
+        _testBlocksbl(array_,@"noerror",0);
         
     }else{
         
-        _testBlocksbl([NSArray array],@"error");
+        _testBlocksbl([NSArray array],@"error",2);
         
     }
     
 }
 //请求失败的处理
 -(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error{
-    _testBlocksbl([NSArray array],@"error");
+    _testBlocksbl([NSArray array],@"error",1);
     
 }
 

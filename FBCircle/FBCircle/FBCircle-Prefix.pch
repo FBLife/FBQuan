@@ -15,8 +15,6 @@
     #import <Foundation/Foundation.h>
 
 
-
-
     #define TITLEFONT [UIFont fontWithName:@"Helvetica" size:20]
 
     #define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
@@ -24,8 +22,10 @@
     #define MY_MACRO_NAME ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
 
 
+
 #endif
 
 #import "SzkAPI.h"
+#import "SzkLoadData.h"
 
-
+#import "FBQuanAPI.h"
