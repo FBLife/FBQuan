@@ -38,7 +38,7 @@
     
     LoginViewController *loginV=[[LoginViewController alloc]init];
     
-    [self presentViewController:loginV animated:NO completion:NULL];
+    [self presentViewController:loginV animated:YES completion:NULL];
     
     
     self.view.backgroundColor=[UIColor whiteColor];

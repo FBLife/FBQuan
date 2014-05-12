@@ -27,9 +27,9 @@
 {
     [super viewDidLoad];
     
+  //  _mainTabV=[[UITableView alloc]initWithFrame:CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)];
     
     
-	// Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning

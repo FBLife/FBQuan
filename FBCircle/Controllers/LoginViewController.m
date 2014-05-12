@@ -8,6 +8,8 @@
 
 #import "LoginViewController.h"
 #import "FbLoginView.h"
+
+#import "FriendAttribute.h"
 @interface LoginViewController ()
 
 @end
@@ -26,6 +28,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    FriendAttribute *_model=[[FriendAttribute alloc]init];
+    
+    
     
     FbLoginView *loginV=[[FbLoginView alloc]initWithFrame:CGRectMake(0, 0,320 , iPhone5?568:480)];
 

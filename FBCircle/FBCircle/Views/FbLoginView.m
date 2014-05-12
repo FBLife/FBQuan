@@ -17,7 +17,6 @@
         
 
 
-
         
         _imgLogo=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@""]];
         [self addSubview:_imgLogo];
