@@ -30,6 +30,7 @@
 		19A0B1C4191E42B400E08E1C /* FbRegistCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A0B1C3191E42B400E08E1C /* FbRegistCell.m */; };
 		19A0B1C7191E626C00E08E1C /* RegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A0B1C6191E626C00E08E1C /* RegistViewController.m */; };
 		19A0B1CA191E62E800E08E1C /* FBQuanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A0B1C9191E62E800E08E1C /* FBQuanViewController.m */; };
+		19A0B1CD19207D4100E08E1C /* FriendAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A0B1CC19207D4100E08E1C /* FriendAttribute.m */; };
 		5658FB06191CD0050016D038 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB01191CD0050016D038 /* MainViewController.m */; };
 		5658FB07191CD0050016D038 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB01191CD0050016D038 /* MainViewController.m */; };
 		5658FB08191CD0050016D038 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB02191CD0050016D038 /* RightViewController.m */; };
@@ -124,6 +125,8 @@
 		19A0B1C6191E626C00E08E1C /* RegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistViewController.m; sourceTree = "<group>"; };
 		19A0B1C8191E62E800E08E1C /* FBQuanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBQuanViewController.h; sourceTree = "<group>"; };
 		19A0B1C9191E62E800E08E1C /* FBQuanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBQuanViewController.m; sourceTree = "<group>"; };
+		19A0B1CB19207D4100E08E1C /* FriendAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendAttribute.h; sourceTree = "<group>"; };
+		19A0B1CC19207D4100E08E1C /* FriendAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendAttribute.m; sourceTree = "<group>"; };
 		5658FB00191CD0050016D038 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		5658FB01191CD0050016D038 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		5658FB02191CD0050016D038 /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightViewController.m; sourceTree = "<group>"; };
@@ -317,6 +320,8 @@
 		199A02181918E0C30081F51D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				19A0B1CB19207D4100E08E1C /* FriendAttribute.h */,
+				19A0B1CC19207D4100E08E1C /* FriendAttribute.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -631,6 +636,7 @@
 				5658FB4E191CD3CD0016D038 /* QBImagePickerFooterView.m in Sources */,
 				199A026D191B7EC60081F51D /* SzkLoadData.m in Sources */,
 				199A01E81918D1DF0081F51D /* main.m in Sources */,
+				19A0B1CD19207D4100E08E1C /* FriendAttribute.m in Sources */,
 				19A0B1CA191E62E800E08E1C /* FBQuanViewController.m in Sources */,
 				19431F00191DE2FE006C58DB /* FbLoginView.m in Sources */,
 				199A02161918DA8E0081F51D /* NewFriendViewController.m in Sources */,

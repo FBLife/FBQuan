@@ -10,4 +10,9 @@
 
 @interface FriendListViewController : UIViewController
 
+@property(nonatomic,strong)UITableView *mainTabV;
+
+
+
+
 @end
