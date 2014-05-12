@@ -96,13 +96,13 @@
         
         
         /* Initialization */
-        self.assets = [NSMutableArray arrayWithObjects:@"",nil];
+        self.assets = [NSMutableArray array];
         self.selectedAssets = [NSMutableOrderedSet orderedSet];
         
         self.imageSize = CGSizeMake(75, 75);
         
         // Table View
-        UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0,0,320,iPhone5?568-20-72:480-20-72) style:UITableViewStylePlain];
+        UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0,0,320,iPhone5?568-20-72-44:480-20-72-44) style:UITableViewStylePlain];
         tableView.dataSource = self;
         tableView.delegate = self;
         tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -192,6 +192,8 @@
     // Reloads
     [self reloadData];
     
+
+    
     if(self.fullScreenLayoutEnabled) {
         // Set bar styles
         self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
@@ -210,7 +212,19 @@
     tishi_label.text = [NSString stringWithFormat:@"%d/%d",0,9-self.selectedArray.count];
     
     // Scroll to bottom
-    [self.tableView setContentOffset:CGPointMake(0, 0) animated:NO];
+//    [self.tableView setContentOffset:CGPointMake(0, 0) animated:NO];
+    
+    NSUInteger sectionCount = [self.tableView numberOfSections];
+    if (sectionCount) {
+        
+        NSUInteger rowCount = [self.tableView numberOfRowsInSection:sectionCount-1];
+        if (rowCount) {
+            
+            NSIndexPath* indexPath = [NSIndexPath indexPathForRow:rowCount-1 inSection:sectionCount-1];
+            [self.tableView scrollToRowAtIndexPath:indexPath
+                                  atScrollPosition:UITableViewScrollPositionBottom animated:YES];
+        }
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -256,8 +270,8 @@
     // Reload assets
     [self.assetsGroup enumerateAssetsUsingBlock:^(ALAsset *result, NSUInteger index, BOOL *stop) {
         if(result) {
-            //            [self.assets addObject:result];
-            [self.assets insertObject:result atIndex:1];
+            [self.assets addObject:result];
+//            [self.assets insertObject:result atIndex:0];
         }
     }];
     
@@ -303,6 +317,8 @@
     }
 }
 
+
+
 - (void)updateRightBarButtonItem
 {
     UIBarButtonItem * spaceBar = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
@@ -342,6 +358,10 @@
 - (void)cancel
 {
     [self.delegate assetCollectionViewControllerDidCancel:self];
+    
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
 }
 
 
@@ -386,6 +406,7 @@
         
     }else
     {
+        
         return self.selectedAssets.array.count;
     }
     

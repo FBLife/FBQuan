@@ -11,6 +11,7 @@
 #import "MainViewController.h"//中心的viewc
 #import "LeftViewController.h"//侧滑到左边的，暂时用不到
 #import "RightViewController.h"//侧滑到右边的，暂时用不到
+#import "WriteBlogViewController.h"
 
 @implementation AppDelegate
 
@@ -39,7 +40,9 @@
 
     
 
-    self.window.rootViewController=_RootVC;
+    WriteBlogViewController * writeVC = [[WriteBlogViewController alloc] init];
+    UINavigationController * navc = [[UINavigationController alloc] initWithRootViewController:writeVC];
+    self.window.rootViewController=navc;
     [self.window makeKeyAndVisible];
     
     return YES;
