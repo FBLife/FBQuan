@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>2946D95C-42D0-4888-B963-016BFF97CD60</string>
+	<string>C8A363DB-CED4-4B0E-B18F-33A5615CA381</string>
 	<key>IDESourceControlProjectName</key>
 	<string>FBCircle</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>C07CEB59-60D1-405C-9FB3-3D3C62DEC715</key>
+		<key>B5910172-225F-4C26-9BC8-7B2C79933A09</key>
 		<string>https://github.com/FBLife/FBQuan.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>FBCircle/FBCircle.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>C07CEB59-60D1-405C-9FB3-3D3C62DEC715</key>
+		<key>B5910172-225F-4C26-9BC8-7B2C79933A09</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>C07CEB59-60D1-405C-9FB3-3D3C62DEC715</string>
+	<string>B5910172-225F-4C26-9BC8-7B2C79933A09</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>C07CEB59-60D1-405C-9FB3-3D3C62DEC715</string>
+			<string>B5910172-225F-4C26-9BC8-7B2C79933A09</string>
 			<key>IDESourceControlWCCName</key>
 			<string>FBQuan</string>
 		</dict>

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "JSONKit.h"
-typedef void(^myBlock)(NSArray *arrayinfo,NSString *errorindo);
+typedef void(^myBlock)(NSArray *arrayinfo,NSString *errorindo,int errcode);
 
 
 

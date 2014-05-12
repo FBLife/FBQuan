@@ -38,7 +38,8 @@
     [_RootVC setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
     [_RootVC setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
 
-    
+
+    [MobClick startWithAppkey:@"5368ab4256240b6925029e29"];
 
     WriteBlogViewController * writeVC = [[WriteBlogViewController alloc] init];
     UINavigationController * navc = [[UINavigationController alloc] initWithRootViewController:writeVC];

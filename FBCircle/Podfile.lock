@@ -46,6 +46,8 @@ PODS:
   - MMDrawerController/Subclass (0.5.5):
     - MMDrawerController/Core
   - Reachability (3.1.1)
+  - UMeng (2.2.1)
+  - UMengFeedback (1.4.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
@@ -53,6 +55,8 @@ DEPENDENCIES:
   - EGOTableViewPullRefresh (~> 0.1.0)
   - JSONKit
   - MMDrawerController (~> 0.5.5)
+  - UMeng (~> 2.2.1)
+  - UMengFeedback (~> 1.4.1)
 
 SPEC CHECKSUMS:
   AFNetworking: ae513199cca79e9d7af2708ccabe2ed075550c42
@@ -61,5 +65,7 @@ SPEC CHECKSUMS:
   JSONKit: b1f52f3f522b8602307769511d4fb47c6f856159
   MMDrawerController: fb6a17a3e2d1cb4f5f4a411915703b3569cdb227
   Reachability: be4883bb93f31e38266ae3365e5600a317aae735
+  UMeng: 92e00182966f7db39313f7054ae5aca95879726c
+  UMengFeedback: 07e4b7ff7eebffd1f5d86cfce43b29adad9e0517
 
 COCOAPODS: 0.32.1

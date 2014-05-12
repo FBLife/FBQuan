@@ -11,12 +11,12 @@
 #import "MMDrawerBarButtonItem.h"
 #import "LeftViewController.h"
 #import "RightViewController.h"
-
 #import <QuartzCore/QuartzCore.h>
 
 
 #import "MainViewController.h"
 #import "JSONKit.h"
+#import "LoginViewController.h"
 @interface MainViewController ()
 
 @end
@@ -36,7 +36,12 @@
 {
     [super viewDidLoad];
     
-    self.view.backgroundColor=[UIColor redColor];
+    LoginViewController *loginV=[[LoginViewController alloc]init];
+    
+    [self presentViewController:loginV animated:NO completion:NULL];
+    
+    
+    self.view.backgroundColor=[UIColor whiteColor];
     
     
 NSMutableArray *AddressbookArr   = [SzkAPI AccesstoAddressBookAndGetDetail];
@@ -46,6 +51,7 @@ NSMutableArray *AddressbookArr   = [SzkAPI AccesstoAddressBookAndGetDetail];
     
     [self setupLeftMenuButton];
     [self setupRightMenuButton];
+    
     
 	// Do any additional setup after loading the view.
 }

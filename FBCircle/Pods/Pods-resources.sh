@@ -49,6 +49,7 @@ install_resource "EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/gray
 install_resource "EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/grayArrow@2x.png"
 install_resource "EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/whiteArrow.png"
 install_resource "EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/whiteArrow@2x.png"
+install_resource "UMengFeedback/UMFeedback_iOS_1.41/umFeedback.bundle"
 
 rsync -avr --copy-links --no-relative --exclude '*/.svn/*' --files-from="$RESOURCES_TO_COPY" / "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
 if [[ "${ACTION}" == "install" ]]; then
