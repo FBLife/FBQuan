@@ -70,7 +70,6 @@
 
 
 -(void)btnClicked:(UIButton*)sender{
-    NSLog(@"%ld",sender.tag);
     //我的相册  10
     //我的好友  11
     //我的消息  12
