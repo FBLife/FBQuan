@@ -41,8 +41,8 @@
 
     [MobClick startWithAppkey:@"5368ab4256240b6925029e29"];
 
-    WriteBlogViewController * writeVC = [[WriteBlogViewController alloc] init];
-    UINavigationController * navc = [[UINavigationController alloc] initWithRootViewController:writeVC];
+  //  WriteBlogViewController * writeVC = [[WriteBlogViewController alloc] init];
+    UINavigationController * navc = [[UINavigationController alloc] initWithRootViewController:_RootVC];
     self.window.rootViewController=navc;
     [self.window makeKeyAndVisible];
     

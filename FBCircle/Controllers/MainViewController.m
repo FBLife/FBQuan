@@ -37,8 +37,9 @@
     [super viewDidLoad];
     
     LoginViewController *loginV=[[LoginViewController alloc]init];
+    UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:loginV];
     
-    [self presentViewController:loginV animated:YES completion:NULL];
+    [self presentViewController:nav animated:YES completion:NULL];
     
     
     self.view.backgroundColor=[UIColor whiteColor];
@@ -55,8 +56,6 @@ NSMutableArray *AddressbookArr   = [SzkAPI AccesstoAddressBookAndGetDetail];
     
 	// Do any additional setup after loading the view.
 }
-
-
 
 -(void)setupLeftMenuButton{
     MMDrawerBarButtonItem * leftDrawerButton = [[MMDrawerBarButtonItem alloc] initWithTarget:self action:@selector(leftDrawerButtonPress:)];

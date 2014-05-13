@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FriendListViewController : UIViewController
+@interface FriendListViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
 @property(nonatomic,strong)UITableView *mainTabV;
 

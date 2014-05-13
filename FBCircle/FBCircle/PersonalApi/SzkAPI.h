@@ -15,4 +15,6 @@
 
 
 
++(NSString *)getUserAuthcode;
+
 @end

@@ -8,8 +8,8 @@
 
 #import "LoginViewController.h"
 #import "FbLoginView.h"
+#import "RegistViewController.h"
 
-#import "FriendAttribute.h"
 @interface LoginViewController ()
 
 @end
@@ -24,18 +24,21 @@
     }
     return self;
 }
+-(void)viewWillAppear:(BOOL)animated{
 
+    [super viewWillAppear:NO];
+    self.navigationController.navigationBarHidden=YES;
+
+
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    FriendAttribute *_model=[[FriendAttribute alloc]init];
     
-    
-    
+
     FbLoginView *loginV=[[FbLoginView alloc]initWithFrame:CGRectMake(0, 0,320 , iPhone5?568:480)];
 
-    loginV.backgroundColor=RGBCOLOR(92, 137, 63);
     [self.view addSubview:loginV];
 
     __weak  typeof(self) _weakself=self;
@@ -57,6 +60,9 @@
             case 103:
             {
                 [_weakself turnToNewregeistVC];
+                
+                
+                
             }
                 break;
             default:
@@ -72,14 +78,46 @@
 
 #pragma mark---登录
 -(void)loginwithUserName:(NSString*)stringUname passWord:(NSString *)passWord deviceToken:(NSString *)_deviceToken{
+        SzkLoadData *_loadRegist=[[SzkLoadData alloc]init];
+    
+    __weak typeof(self)_weakself=self;
+     [_loadRegist SeturlStr:[NSString stringWithFormat:LOGINAPI,stringUname,passWord,@"token"] block:^(NSArray *arrayinfo, NSString *errorindo, int errcode) {
+     
+     if (errcode==0) {
+     NSLog(@"sxss%@",arrayinfo);
+         NSDictionary *dic=(NSDictionary *)arrayinfo;
+         NSLog(@"dic===%@",dic);
+         NSUserDefaults *standUDef=[NSUserDefaults standardUserDefaults];
+         NSString *authkey=[dic objectForKey:AUTHKEY];
+         [standUDef setObject:authkey forKey:AUTHKEY];
+     
+         [_weakself testttt];
+     }
+         
+    
+     
+     }];
+     
+     NSString *str_url=[NSString stringWithFormat:LOGINAPI,stringUname,passWord,_deviceToken];
+     
+     NSLog(@"登录的接口为==%@",str_url);
 
-    NSLog(@"%@\n%@\n%@",stringUname,passWord,_deviceToken);
+    NSLog(@"stringUname=%@\npassWord%@\n_deviceToken=%@",stringUname,passWord,_deviceToken);
 
 }
 
 #pragma mark---更改密码
 //功能暂时不做
+
+-(void)testttt{
+    NSString *striing_auth=[NSString stringWithFormat:@"%@",[[NSUserDefaults standardUserDefaults] objectForKey:AUTHKEY]];
+    UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"tishi" message:striing_auth delegate:nil cancelButtonTitle:@"test" otherButtonTitles:nil, nil];
+    [alert show];
+    
+}
 -(void)turnToChangWordVC{
+    
+    
 
 }
 
@@ -87,9 +125,20 @@
 
 -(void)turnToNewregeistVC{
     
-    NSLog(@"新用户注册");
-}
 
+    RegistViewController *_registVC=[[RegistViewController alloc]init];
+    
+    
+    [self.navigationController pushViewController:_registVC animated:YES];
+
+    
+    
+    NSLog(@"新用户注册");
+    
+}
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
 
 - (void)didReceiveMemoryWarning
 {
