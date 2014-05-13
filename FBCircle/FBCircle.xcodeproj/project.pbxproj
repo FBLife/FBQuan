@@ -75,6 +75,8 @@
 		566D566419209984003B6AD8 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 566D564319209984003B6AD8 /* MyViewController.m */; };
 		566D566519209984003B6AD8 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 566D564319209984003B6AD8 /* MyViewController.m */; };
 		CFB1EC5CCA004D43AB37F42F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA336E5564984EDCBE0DB938 /* libPods.a */; };
+		E3FCA51A19220E2000EC0FAB /* GpersonallSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FCA51919220E2000EC0FAB /* GpersonallSettingViewController.m */; };
+		E3FCA51B19220E2000EC0FAB /* GpersonallSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FCA51919220E2000EC0FAB /* GpersonallSettingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -168,6 +170,8 @@
 		566D564219209984003B6AD8 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		566D564319209984003B6AD8 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 		8B611DE4DD6843ADB67DE824 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		E3FCA51819220E2000EC0FAB /* GpersonallSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GpersonallSettingViewController.h; sourceTree = "<group>"; };
+		E3FCA51919220E2000EC0FAB /* GpersonallSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GpersonallSettingViewController.m; sourceTree = "<group>"; };
 		FA336E5564984EDCBE0DB938 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -237,6 +241,7 @@
 		199A01E11918D1DF0081F51D /* FBCircle */ = {
 			isa = PBXGroup;
 			children = (
+				E3FCA51619220E2000EC0FAB /* GM */,
 				566D561B19209984003B6AD8 /* ZSNController */,
 				566D560F19206F2B003B6AD8 /* publicImages */,
 				199A0225191A11C40081F51D /* PersonalApi */,
@@ -471,6 +476,23 @@
 			path = ZSNAPI;
 			sourceTree = "<group>";
 		};
+		E3FCA51619220E2000EC0FAB /* GM */ = {
+			isa = PBXGroup;
+			children = (
+				E3FCA51719220E2000EC0FAB /* C */,
+			);
+			path = GM;
+			sourceTree = "<group>";
+		};
+		E3FCA51719220E2000EC0FAB /* C */ = {
+			isa = PBXGroup;
+			children = (
+				E3FCA51819220E2000EC0FAB /* GpersonallSettingViewController.h */,
+				E3FCA51919220E2000EC0FAB /* GpersonallSettingViewController.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -617,6 +639,7 @@
 				5658FB0A191CD0050016D038 /* LeftViewController.m in Sources */,
 				566D564E19209984003B6AD8 /* QBImagePickerAssetView.m in Sources */,
 				199A02101918DA130081F51D /* LoginViewController.m in Sources */,
+				E3FCA51A19220E2000EC0FAB /* GpersonallSettingViewController.m in Sources */,
 				19A0B1C4191E42B400E08E1C /* FbRegistCell.m in Sources */,
 				199A02131918DA5F0081F51D /* FriendListViewController.m in Sources */,
 				5658FB06191CD0050016D038 /* MainViewController.m in Sources */,
@@ -662,6 +685,7 @@
 				5658FB09191CD0050016D038 /* RightViewController.m in Sources */,
 				566D565719209984003B6AD8 /* QBImagePickerGroupCell.m in Sources */,
 				566D566319209984003B6AD8 /* WriteBlogViewController.m in Sources */,
+				E3FCA51B19220E2000EC0FAB /* GpersonallSettingViewController.m in Sources */,
 				566D565919209984003B6AD8 /* QBImagePickerVideoInfoView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
