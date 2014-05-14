@@ -12,6 +12,7 @@
 #import "LeftViewController.h"//侧滑到左边的，暂时用不到
 #import "RightViewController.h"//侧滑到右边的，暂时用不到
 #import "WriteBlogViewController.h"
+#import "pinyin.h"
 
 @implementation AppDelegate
 
@@ -22,7 +23,10 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     
+    
+    
     MainViewController *_MainVC=[[MainViewController alloc]init];
+    _MainVC.edgesForExtendedLayout = UIRectEdgeNone;
     UINavigationController * _MainNaVC = [[UINavigationController alloc] initWithRootViewController:_MainVC];
 
     

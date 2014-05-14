@@ -14,6 +14,11 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import "MyViewController.h"
+    #import "AsyncImageView.h"
+    #import "SzkAPI.h"
+    #import "SzkLoadData.h"
+
+    #import "FBQuanAPI.h"
 
     //颜色
 
@@ -33,7 +38,4 @@
 
 #endif
 
-#import "SzkAPI.h"
-#import "SzkLoadData.h"
 
-#import "FBQuanAPI.h"

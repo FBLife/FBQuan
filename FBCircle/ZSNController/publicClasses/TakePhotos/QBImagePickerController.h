@@ -38,7 +38,7 @@ typedef enum {
 
 @end
 
-@interface QBImagePickerController : UIViewController <UITableViewDataSource, UITableViewDelegate, QBAssetCollectionViewControllerDelegate>
+@interface QBImagePickerController : MyViewController <UITableViewDataSource, UITableViewDelegate, QBAssetCollectionViewControllerDelegate>
 {
     
 }

@@ -14,11 +14,13 @@
 #import "QBImagePickerAssetCell.h"
 #import "QBImagePickerFooterView.h"
 #import "QBImagePickerAssetView.h"
+#import "QBShowImageDetailViewController.h"
 
 @interface QBAssetCollectionViewController ()
 {
-    UILabel * tishi_label;
+    UILabel * preview_label;
     UIButton * tishi_button;
+    UIButton * preview_button;
 }
 
 
@@ -68,31 +70,7 @@
         [button_back release];
         
         
-        
-        
-        UILabel * title_label = [[UILabel alloc] initWithFrame:CGRectMake(0,0,100,44)];
-        
-        title_label.text = @"存储的照片";
-        
-        title_label.textAlignment = NSTextAlignmentCenter;
-        
-        title_label.textColor = [UIColor blackColor];
-        
-        title_label.backgroundColor = [UIColor clearColor];
-        
-        title_label.font = TITLEFONT;
-        
-        self.navigationItem.titleView = title_label;
-        
-        
-        //        self.navigationItem.title = @"存储的照片";
-        //
-        //        UIColor * cc = [UIColor blackColor];
-        //
-        //        NSDictionary * dict = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:cc,[UIFont systemFontOfSize:20],[UIColor clearColor],nil] forKeys:[NSArray arrayWithObjects:UITextAttributeTextColor,UITextAttributeFont,UITextAttributeTextShadowColor,nil]];
-        //
-        //        self.navigationController.navigationBar.titleTextAttributes = dict;
-        
+        self.title = @"存储的照片";
         
         
         /* Initialization */
@@ -102,7 +80,7 @@
         self.imageSize = CGSizeMake(75, 75);
         
         // Table View
-        UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0,0,320,iPhone5?568-20-72-44:480-20-72-44) style:UITableViewStylePlain];
+        UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0,6,320,(iPhone5?568:480)-6-20-44-89/2) style:UITableViewStylePlain];
         tableView.dataSource = self;
         tableView.delegate = self;
         tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -119,19 +97,19 @@
         image_array = [[NSMutableArray alloc] init];
         
         
+        UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0,(iPhone5?568:480)-64-89/2,320,89/2)];
         
-        UIImageView * imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"640_146.png"]];
+        imageView.image = [UIImage imageNamed:@"ChoosePictureBackGroundImage.png"];
         
         imageView.userInteractionEnabled = YES;
         
-        imageView.center = CGPointMake(160,iPhone5?548-73/2 - 44:460-73/2 - 44);
+        imageView.backgroundColor = [UIColor clearColor];
         
         [self.view addSubview:imageView];
         
         tishi_button = [UIButton buttonWithType:UIButtonTypeCustom];
         
-        tishi_button.frame = CGRectMake(270,17,40,39);
-        [tishi_button setImage:[UIImage imageNamed:@"choosepictureOk.png"] forState:UIControlStateNormal];
+        tishi_button.frame = CGRectMake(250,11,102/2,45/2);
         
         [tishi_button addTarget:self action:@selector(done) forControlEvents:UIControlEventTouchUpInside];
         
@@ -139,31 +117,63 @@
         [imageView addSubview:tishi_button];
         
         
-        tishi_label = [[UILabel alloc] initWithFrame:CGRectMake(0,17,40,20)];
         
-        tishi_label.text = [NSString stringWithFormat:@"%d/%d",0,9-self.selectedArray.count];
+        UILabel * finish_label = [[UILabel alloc] initWithFrame:CGRectMake(0,0,102/2,22.5)];
         
-        tishi_label.backgroundColor = [UIColor clearColor];
+        finish_label.text = @"完成";
         
-        tishi_label.textAlignment = NSTextAlignmentCenter;
+        finish_label.textAlignment = NSTextAlignmentCenter;
         
-        tishi_label.textColor = [UIColor whiteColor];
+        finish_label.backgroundColor = [UIColor clearColor];
         
-        tishi_label.font = [UIFont systemFontOfSize:14];
+        finish_label.textAlignment = NSTextAlignmentCenter;
         
-        [tishi_button addSubview:tishi_label];
+        finish_label.textColor = [UIColor whiteColor];
+        
+        finish_label.font = [UIFont systemFontOfSize:14];
+        
+        [tishi_button addSubview:finish_label];
+
+        
+        
+        preview_button = [UIButton buttonWithType:UIButtonTypeCustom];
+        
+        preview_button.frame = CGRectMake(3,11,102/2,45/2);
+        
+        [preview_button addTarget:self action:@selector(PreviewTap:) forControlEvents:UIControlEventTouchUpInside];
+        
+        [imageView addSubview:preview_button];
         
         
         
-        scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0,0,250,73)];
+        preview_label = [[UILabel alloc] initWithFrame:CGRectMake(0,0,102/2,22.5)];
         
-        scrollView.backgroundColor = [UIColor clearColor];
+        preview_label.backgroundColor = [UIColor clearColor];
         
-        scrollView.delegate = self;
+        preview_label.textAlignment = NSTextAlignmentCenter;
         
-        scrollView.scrollEnabled = YES;
+        preview_label.textColor = [UIColor whiteColor];
         
-        [imageView addSubview:scrollView];
+        preview_label.font = [UIFont systemFontOfSize:14];
+        
+        [preview_button addSubview:preview_label];
+        
+        
+//        if (self.selectedArray.count == 0) {
+            preview_label.text = @"预览";
+            
+            [preview_button setImage:[UIImage imageNamed:@"ChoosePicturePreViewNo.png"] forState:UIControlStateNormal];
+            
+            [tishi_button setImage:[UIImage imageNamed:@"choosePictureFinishNo.png"] forState:UIControlStateNormal];
+//        }else
+//        {
+//            preview_label.text = [NSString stringWithFormat:@"预览(%d)",self.selectedArray.count];
+//            
+//            [preview_button setImage:[UIImage imageNamed:@"choosePicturePreviewOk.png"] forState:UIControlStateNormal];
+//            
+//            [tishi_button setImage:[UIImage imageNamed:@"choosePictureFinishOk.png"] forState:UIControlStateNormal];
+//        }
+        
     }
     
     return self;
@@ -209,7 +219,14 @@
         [self setWantsFullScreenLayout:NO];
     }
     
-    tishi_label.text = [NSString stringWithFormat:@"%d/%d",0,9-self.selectedArray.count];
+    if (self.selectedAssets.count == 0) {
+        preview_label.text = @"预览";
+    }else
+    {
+        preview_label.text = [NSString stringWithFormat:@"预览(%d)",self.selectedAssets.count];
+    }
+    
+    
     
     // Scroll to bottom
 //    [self.tableView setContentOffset:CGPointMake(0, 0) animated:NO];
@@ -349,6 +366,18 @@
         self.doneButton.enabled = (self.selectedAssets.count > 0);
     }
 }
+
+
+-(void)PreviewTap:(UIButton *)sender
+{
+    QBShowImageDetailViewController * showImageV = [[QBShowImageDetailViewController alloc] init];
+    
+    showImageV.selectedAssets = self.selectedAssets;
+    
+    [self.navigationController pushViewController:showImageV animated:YES];
+    
+}
+
 
 - (void)done
 {
@@ -540,22 +569,6 @@
 }
 
 
--(void)updateScrollView
-{
-    [UIView animateWithDuration:0.1 animations:^{
-        if (self.selectedAssets.count>4)
-        {
-            CGFloat offsetY=10+(self.selectedAssets.count-4)*60;
-            [scrollView setContentOffset:CGPointMake(offsetY,0) animated:YES];
-        }else{
-            [scrollView setContentOffset:CGPointMake(0, 0) animated:YES];
-        }
-    }];
-    
-}
-
-
-
 
 #pragma mark - UITableViewDelegate
 
@@ -666,35 +679,13 @@
             if (self.selectedAssets.count >= 9-self.selectedArray.count)
             {
                 asset1111.selected = NO;
-                UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:nil message:[NSString stringWithFormat:@"最多选择%d张图片",9-self.selectedArray.count] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
+                UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:nil message:[NSString stringWithFormat:@"最多选择%d张图片",9-(int)self.selectedArray.count] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
                 [alertView show];
-            }else
-            {
-                
-                [self.selectedAssets addObject:asset];
-                
-                UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
-                
-                button.frame = CGRectMake(10+currentPage*60,11.5,50,50);
-                
-                [button setImage:image forState:UIControlStateNormal];
-                
-                button.imageView.clipsToBounds = YES;
-                
-                button.imageView.contentMode = UIViewContentModeScaleAspectFill;
-                
-                //                [button addTarget:self action:@selector(removeSelf:) forControlEvents:UIControlEventTouchUpInside];
-                
-                button.tag = assetIndex;
-                
-                scrollView.contentSize = CGSizeMake(self.selectedAssets.count * 60,0);
-                
-                [scrollView addSubview:button];
-                
-                [image_array addObject:button];
                 
                 currentPage++;
-                [self updateScrollView];
+            }else
+            {
+                [self.selectedAssets addObject:asset];
             }
             
         }else
@@ -703,26 +694,21 @@
             
             [self.selectedAssets removeObject:asset];
             
-            UIButton * button = (UIButton *)[scrollView viewWithTag:assetIndex];
-            [image_array removeObject:button];
-            [button removeFromSuperview];
-            
-            for (int i = 0;i < image_array.count;i++)
-            {
-                UIButton * immmmm = (UIButton *)[image_array objectAtIndex:i];
-                
-                immmmm.frame = CGRectMake(10+i*60,11.5,50,50);
-            }
-            
-            [self updateScrollView];
         }
         // Set done button state
         [self updateDoneButton];
         
+        [preview_button setImage:[UIImage imageNamed:self.selectedAssets.count?@"choosePicturePreviewOk.png":@"ChoosePicturePreViewNo.png"] forState:UIControlStateNormal];
         
-        [tishi_button setImage:[UIImage imageNamed:self.selectedAssets.count?@"choosepictureno":@"choosepictureOk"] forState:UIControlStateNormal];
+        [tishi_button setImage:[UIImage imageNamed:self.selectedAssets.count?@"choosePictureFinishOk":@"choosePictureFinishNo"] forState:UIControlStateNormal];
         
-        tishi_label.text = [NSString stringWithFormat:@"%d/%d",self.selectedAssets.count,9-self.selectedArray.count];
+        if (self.selectedAssets.count == 0) {
+            preview_label.text = @"预览";
+        }else
+        {
+            preview_label.text = [NSString stringWithFormat:@"预览(%d)",self.selectedAssets.count];
+        }
+        
         
     } else
     {

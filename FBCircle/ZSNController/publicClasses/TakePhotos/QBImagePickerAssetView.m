@@ -55,8 +55,8 @@
         UIImageView *overlayImageView = [[UIImageView alloc] initWithFrame:self.bounds];
         overlayImageView.contentMode = UIViewContentModeScaleAspectFill;
         overlayImageView.clipsToBounds = YES;
-        overlayImageView.image = [UIImage imageNamed:@"weiboChoosePicturesback.png"];
-        overlayImageView.hidden = YES;
+        overlayImageView.backgroundColor = [UIColor clearColor];
+        overlayImageView.image = [UIImage imageNamed:@"choosePhotoMarkNo.png"];
         overlayImageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         
         [self addSubview:overlayImageView];
@@ -87,15 +87,18 @@
 
 - (void)setSelected:(BOOL)selected
 {
-    //    if(self.allowsMultipleSelection)
-    //    {
-    self.overlayImageView.hidden = !selected;
-    //    }
+    self.overlayImageView.image = [UIImage imageNamed:selected?@"choosePhotoMarkOk.png":@"choosePhotoMarkNo.png"];
 }
 
 - (BOOL)selected
 {
-    return !self.overlayImageView.hidden;
+    
+    if ([self.overlayImageView.image isEqual:[UIImage imageNamed:@"choosePhotoMarkOk.png"]]) {
+        return YES;
+    }else
+    {
+        return NO;
+    }
 }
 
 - (void)dealloc

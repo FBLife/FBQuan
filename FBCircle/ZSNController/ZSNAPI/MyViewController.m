@@ -34,6 +34,8 @@
 {
     [super viewDidLoad];
     
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    
     self.view.backgroundColor = RGBCOLOR(214,214,214);
 	
     
@@ -66,7 +68,7 @@
     {
         UIButton *button_back=[[UIButton alloc]initWithFrame:CGRectMake(10,8,12,21.5)];
         [button_back addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
-        [button_back setBackgroundImage:[UIImage imageNamed:@"ios7_back@2x.png"] forState:UIControlStateNormal];
+        [button_back setBackgroundImage:[UIImage imageNamed:@"FBQuanBackImage.png"] forState:UIControlStateNormal];
         UIBarButtonItem *back_item=[[UIBarButtonItem alloc]initWithCustomView:button_back];
         self.navigationItem.leftBarButtonItems=@[spaceButton,back_item];
     }else if (theType == MyViewControllerLeftbuttonTypelogo)

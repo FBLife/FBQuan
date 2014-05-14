@@ -19,9 +19,8 @@
 // Controllers
 #import "QBImagePickerController.h"
 
-@interface QBAssetCollectionViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, QBImagePickerAssetCellDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
+@interface QBAssetCollectionViewController : MyViewController <UITableViewDataSource, UITableViewDelegate, QBImagePickerAssetCellDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 {
-    UIScrollView * scrollView;
     NSMutableArray * image_array;
     int currentPage;
 }
