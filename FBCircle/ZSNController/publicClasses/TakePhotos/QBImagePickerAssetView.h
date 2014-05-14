@@ -25,4 +25,6 @@
 @property (nonatomic, retain) UIImageView *overlayImageView;
 
 
+- (UIImage *)thumbnail;
+
 @end

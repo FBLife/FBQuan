@@ -9,8 +9,11 @@ pod 'MMDrawerController', '~> 0.5.5'
 pod 'UMengFeedback', '~> 1.4.1'
 
 pod 'UMeng', '~> 2.2.1'
+<<<<<<< HEAD
+=======
 
 
 pod 'SDWebImage', '~> 3.6'
 
 
+>>>>>>> FETCH_HEAD

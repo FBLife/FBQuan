@@ -16,9 +16,12 @@
 
 
 
-@interface WriteBlogViewController : UIViewController<QBImagePickerControllerDelegate,UITableViewDataSource,UITableViewDelegate,UITextViewDelegate>
+@interface WriteBlogViewController : UIViewController<UIImagePickerControllerDelegate,UINavigationControllerDelegate,QBImagePickerControllerDelegate,UITableViewDataSource,UITableViewDelegate,UITextViewDelegate,UIActionSheetDelegate>
 {
     UILabel * placeHolderLable;
+    
+    UIView * picturesView;
+    
 }
 
 
@@ -31,6 +34,12 @@
 @property(nonatomic,strong)UITextView * myTextView;
 
 @property(nonatomic,assign)BOOL isShowLocation;
+
+@property(nonatomic,strong)UILabel * locationLabel;
+
+@property(nonatomic,strong)NSMutableArray * allImageArray;
+
+@property(nonatomic,strong)NSMutableArray * allAssesters;
 
 
 

@@ -56,6 +56,10 @@
             assetView.hidden = NO;
             assetView.asset = [self.assets objectAtIndex:i];
             
+//            if ([self.selected_array containsObject:assetView.asset.defaultRepresentation.url]) {
+//                assetView.selected = YES;
+//            }
+            
         } else
         {
             assetView.hidden = YES;
@@ -109,39 +113,18 @@
     // Add asset views
     for(NSUInteger i = 0; i < self.numberOfAssets ; i++)
     {
-//        if (i == 0 && self.nowIndexPath.row == 0)
-//        {
-//            UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
-//            
-//            button.frame = CGRectMake(self.margin,self.margin,self.imageSize.width,self.imageSize.height);
-//            
-//            button.backgroundColor = [UIColor grayColor];
-//            
-//            //            [button setTitle:@"拍照" forState:UIControlStateNormal];
-//            
-//            [button setBackgroundImage:[UIImage imageNamed:@"takePhotoBack@2x.png"] forState:UIControlStateNormal];
-//            
-//            [button setImage:[UIImage imageNamed:@"takePhoto.png"] forState:UIControlStateNormal];
-//            
-//            
-//            [button addTarget:self action:@selector(takePhoto:) forControlEvents:UIControlEventTouchUpInside];
-//            
-//            [self.contentView addSubview:button];
-//        }else
-//        {
-            // Calculate frame
-            CGFloat offset = (self.margin + self.imageSize.width) * i;
-            CGRect assetViewFrame = CGRectMake(offset + self.margin, self.margin, self.imageSize.width, self.imageSize.height);
-            // Add asset view
-            QBImagePickerAssetView *assetView = [[QBImagePickerAssetView alloc] initWithFrame:assetViewFrame];
-            assetView.delegate = self;
-            assetView.tag = 1 + i;
-            //            NSLog(@"assetView.tag ----  %d",assetView.tag);
-            assetView.autoresizingMask = UIViewAutoresizingNone;
-            
-            [self.contentView addSubview:assetView];
-            [assetView release];
-//        }
+        // Calculate frame
+        CGFloat offset = (self.margin + self.imageSize.width) * i;
+        CGRect assetViewFrame = CGRectMake(offset + self.margin, self.margin, self.imageSize.width, self.imageSize.height);
+        // Add asset view
+        QBImagePickerAssetView *assetView = [[QBImagePickerAssetView alloc] initWithFrame:assetViewFrame];
+        assetView.delegate = self;
+        assetView.tag = 1 + i;
+        //            NSLog(@"assetView.tag ----  %d",assetView.tag);
+        assetView.autoresizingMask = UIViewAutoresizingNone;
+        
+        [self.contentView addSubview:assetView];
+        [assetView release];
         
     }
 }
@@ -160,6 +143,7 @@
 
 - (void)selectAllAssets
 {
+    
     for(UIView *subview in self.contentView.subviews) {
         if([subview isMemberOfClass:[QBImagePickerAssetView class]]) {
             if(![(QBImagePickerAssetView *)subview isHidden]) {
@@ -171,6 +155,7 @@
 
 - (void)deselectAllAssets
 {
+    
     for(UIView *subview in self.contentView.subviews) {
         if([subview isMemberOfClass:[QBImagePickerAssetView class]]) {
             if(![(QBImagePickerAssetView *)subview isHidden]) {

@@ -47,31 +47,13 @@
         [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeSavedPhotosAlbum];
         
         /* Initialization */
+                
+//        self.view.backgroundColor = RGBCOLOR(229,229,229);
         
+//        [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"FBCircleNavagationImage.png"] forBarMetrics: UIBarMetricsDefault];
         
-        UILabel * title_label = [[UILabel alloc] initWithFrame:CGRectMake(0,0,100,44)];
+        self.title = @"相册";
         
-        title_label.textColor = [UIColor blackColor];
-        
-        title_label.textAlignment = NSTextAlignmentCenter;
-        
-        title_label.text = @"相册";
-        
-        title_label.font = TITLEFONT;
-        
-        title_label.backgroundColor = [UIColor clearColor];
-        
-        self.navigationItem.titleView = title_label;
-        
-        
-        
-        //        self.navigationItem.title = @"相册";
-        //
-        //        UIColor * cc = [UIColor blackColor];
-        //
-        //        NSDictionary * dict = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:cc,[UIFont systemFontOfSize:20],[UIColor clearColor],nil] forKeys:[NSArray arrayWithObjects:UITextAttributeTextColor,UITextAttributeFont,UITextAttributeTextShadowColor,nil]];
-        //
-        //        self.navigationController.navigationBar.titleTextAttributes = dict;
         
         self.filterType = QBImagePickerFilterTypeAllPhotos;
         self.showsCancelButton = YES;
@@ -90,7 +72,7 @@
         self.assetsGroups = [NSMutableArray array];
         
         // Table View
-        UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0,0,320,iPhone5?568:480) style:UITableViewStylePlain];
+        UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0,6,320,iPhone5?568:480) style:UITableViewStylePlain];
         tableView.dataSource = self;
         tableView.delegate = self;
         //        tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
