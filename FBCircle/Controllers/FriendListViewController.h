@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FriendListViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@interface FriendListViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>{
+
+    NSMutableArray *arrayOfCharacters;
+    NSMutableArray *arrayname;
+
+}
 
 @property(nonatomic,strong)UITableView *mainTabV;
 

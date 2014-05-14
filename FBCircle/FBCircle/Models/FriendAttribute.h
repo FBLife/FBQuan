@@ -18,5 +18,6 @@
 
 
 -(void)setFriendAttributeDic:(NSDictionary *)dicinfo;
+- (NSString *) getFirstName;
 
 @end

@@ -12,6 +12,8 @@
 #import "LeftViewController.h"//侧滑到左边的，暂时用不到
 #import "RightViewController.h"//侧滑到右边的，暂时用不到
 #import "WriteBlogViewController.h"
+#import "GpersonallSettingViewController.h"
+
 
 @implementation AppDelegate
 
@@ -26,14 +28,18 @@
     UINavigationController * _MainNaVC = [[UINavigationController alloc] initWithRootViewController:_MainVC];
 
     
-    LeftViewController *_LeftVC=[[LeftViewController alloc]init];
-    RightViewController *_RightVC=[[RightViewController alloc]init];
+    GpersonallSettingViewController *_LeftVC=[[GpersonallSettingViewController alloc]init];
+  //  RightViewController *_RightVC=[[RightViewController alloc]init];
     
-    MMDrawerController *_RootVC=[[MMDrawerController alloc]initWithCenterViewController:_MainNaVC leftDrawerViewController:_LeftVC rightDrawerViewController:_RightVC];
+    UINavigationController * _ln = [[UINavigationController alloc] initWithRootViewController:_LeftVC];
+  //  UINavigationController * _rn = [[UINavigationController alloc] initWithRootViewController:_RightVC];
+
+    
+    MMDrawerController *_RootVC=[[MMDrawerController alloc]initWithCenterViewController:_MainNaVC leftDrawerViewController:nil rightDrawerViewController:nil];
     
     
     [_RootVC setMaximumRightDrawerWidth:200];
-    [_RootVC setMaximumLeftDrawerWidth:205];
+    [_RootVC setMaximumLeftDrawerWidth:320];
     _RootVC.shouldStretchDrawer = NO;
     [_RootVC setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
     [_RootVC setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
@@ -42,13 +48,13 @@
     [MobClick startWithAppkey:@"5368ab4256240b6925029e29"];
 
   //  WriteBlogViewController * writeVC = [[WriteBlogViewController alloc] init];
-    UINavigationController * navc = [[UINavigationController alloc] initWithRootViewController:_RootVC];
-    self.window.rootViewController=navc;
+  //  UINavigationController * navc = [[UINavigationController alloc] initWithRootViewController:_RootVC];
+    self.window.rootViewController=_RootVC;
     [self.window makeKeyAndVisible];
     
     return YES;
+    
 }
-
 
 
 - (void)applicationWillResignActive:(UIApplication *)application

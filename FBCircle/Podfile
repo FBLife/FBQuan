@@ -10,11 +10,7 @@ pod 'UMengFeedback', '~> 1.4.1'
 
 pod 'UMeng', '~> 2.2.1'
 
-pod 'AsyncImageView', '~> 1.5.1'
 
-
-
-
-
+pod 'SDWebImage', '~> 3.6'
 
 

@@ -7,6 +7,8 @@
 //
 
 #import "GpersonallSettingViewController.h"
+#import "FriendListViewController.h"
+
 
 @interface GpersonallSettingViewController ()
 
@@ -33,6 +35,7 @@
         self.edgesForExtendedLayout = UIRectEdgeNone;
     }
     
+    self.view.backgroundColor=[UIColor whiteColor];
     
     //头像
     UIImageView *userFaceImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 107, 107)];
@@ -48,7 +51,6 @@
     UILabel *qianmingLable = [[UILabel alloc]initWithFrame:CGRectMake(nameLable.frame.origin.x, CGRectGetMaxY(nameLable.frame)+10, 160, 30)];
     qianmingLable.backgroundColor = [UIColor greenColor];
     [self.view addSubview:qianmingLable];
-    
     
     
     
@@ -70,6 +72,43 @@
 
 
 -(void)btnClicked:(UIButton*)sender{
+    
+    switch (sender.tag) {
+        case 10:
+        {
+        }
+            break;
+        case 11:
+        {
+            FriendListViewController *_friendListV=[[FriendListViewController alloc]init];
+            [self.navigationController pushViewController:_friendListV animated:YES];
+            
+            
+        }
+            break;
+        case 12:
+        {
+        }
+            break;
+        case 13:
+        {
+        }
+            break;
+        case 14:
+        {
+        }
+            break;
+            
+        case 15:
+        {
+        }
+            break;
+            
+        default:
+            break;
+    }
+    
+    
     //我的相册  10
     //我的好友  11
     //我的消息  12

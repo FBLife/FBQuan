@@ -8,6 +8,8 @@
 
 #import "FriendAttribute.h"
 
+//#import "pinyin.h"
+
 @implementation FriendAttribute
 
 -(void)setFriendAttributeDic:(NSDictionary *)dicinfo{
@@ -21,9 +23,24 @@
 
     
 
-
 }
 
-
+- (NSString *) getFirstName
+{
+    NSString * firstName;
+    if ([[[self.fbuname substringToIndex:1] substringFromIndex:0] canBeConvertedToEncoding: NSASCIIStringEncoding])
+    {
+        //如果是英语
+        firstName = self.fbuname;
+    }
+    else
+    {
+//如果是非英语
+//firstName = [NSString stringWithFormat:@"%c",pinyinFirstLetter([[[self.fbuname substringToIndex:1] substringFromIndex:0] characterAtIndex:0])];
+    }
+    
+    return firstName;
+    
+}
 
 @end

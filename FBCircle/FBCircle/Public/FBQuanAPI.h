@@ -6,9 +6,8 @@
 //  Copyright (c) 2014年 szk. All rights reserved.
 //
 #pragma mark--公共类
-
-#import "AsyncImageView.h"
-
+//#import "pinyin.h"
+#import "UIImageView+WebCache.h"
 #import "ASIHTTPRequest.h"
 
 
@@ -36,26 +35,11 @@ alpha:(a)]
 #define LOGINAPI @"http://quan.fblife.com/index.php?c=interface&a=dologin&uname=%@&upass=%@&token=%@"
 #define AUTHKEY @"authkey"
 //注册相关的接口
-
 #define REGISTAPI @"http://quan.fblife.com/index.php?c=interface&a=register&uname=%@&upass=%@&phone=%@&pcode=%@&email=%@&token=%@&fbtype=json"
+//获取用户列表
 
-/**
- *  http://quan.fblife.com/index.php?c=interface&a=register&uname=newlyhere&upass=11212&phone=18601901680&pcode=123&email=ivyandrich@gmail.com&token=sfsfsfsfsfsfs&fbtype=json
- 
- 接口参数：
- c ：固定的，不用管
- a ：固定的，不用管
- uname ：用户名
- upass ：密码
- phone ：电话
- pcode ：验证码
- email ：邮箱
- token ：token，你懂的
- fbtype ：返回值类型，默认为json，可设置为xml
- */
+#define GETFRIENDLIST @"http://quan.fblife.com/index.php?c=interface&a=getbuddy&authkey=%@"
 
-
-//
 
 
 

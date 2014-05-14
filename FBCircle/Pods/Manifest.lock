@@ -31,7 +31,6 @@ PODS:
     - Reachability
   - ASIHTTPRequest/S3 (1.8.2):
     - ASIHTTPRequest/Core
-  - AsyncImageView (1.5.1)
   - EGOTableViewPullRefresh (0.1.0)
   - JSONKit (1.5pre)
   - MMDrawerController (0.5.5):
@@ -47,27 +46,30 @@ PODS:
   - MMDrawerController/Subclass (0.5.5):
     - MMDrawerController/Core
   - Reachability (3.1.1)
+  - SDWebImage (3.6):
+    - SDWebImage/Core
+  - SDWebImage/Core (3.6)
   - UMeng (2.2.1)
   - UMengFeedback (1.4.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
   - ASIHTTPRequest
-  - AsyncImageView (~> 1.5.1)
   - EGOTableViewPullRefresh (~> 0.1.0)
   - JSONKit
   - MMDrawerController (~> 0.5.5)
+  - SDWebImage (~> 3.6)
   - UMeng (~> 2.2.1)
   - UMengFeedback (~> 1.4.1)
 
 SPEC CHECKSUMS:
   AFNetworking: ae513199cca79e9d7af2708ccabe2ed075550c42
   ASIHTTPRequest: 0b05282cf3c422c3474eff98c5bb8c1192b91b86
-  AsyncImageView: 686febb2b2a923353ede67c529d257498059852d
   EGOTableViewPullRefresh: 7ed130952ccdc745c06835558cb13193fda22d78
   JSONKit: b1f52f3f522b8602307769511d4fb47c6f856159
   MMDrawerController: fb6a17a3e2d1cb4f5f4a411915703b3569cdb227
   Reachability: be4883bb93f31e38266ae3365e5600a317aae735
+  SDWebImage: 7eb273e54ca8a2e506ad9bd5e80c35b2a4d7c95e
   UMeng: 92e00182966f7db39313f7054ae5aca95879726c
   UMengFeedback: 07e4b7ff7eebffd1f5d86cfce43b29adad9e0517
 

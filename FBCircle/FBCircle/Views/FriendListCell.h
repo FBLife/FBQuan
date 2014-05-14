@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FriendAttribute.h"
+
 @interface FriendListCell : UITableViewCell
 
-@property (nonatomic,strong)AsyncImageView *img_head;
+@property(nonatomic,strong)UIImageView *headImageV;
 
+@property (nonatomic,strong)UILabel  *nameLabel;
+
+-(void)setFriendAttribute:(FriendAttribute *)FriendAttributemodel;
 
 
 @end

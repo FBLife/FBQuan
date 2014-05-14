@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		19431F00191DE2FE006C58DB /* FbLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19431EFF191DE2FE006C58DB /* FbLoginView.m */; };
-		199A01DC1918D1DF0081F51D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199A01DB1918D1DF0081F51D /* Foundation.framework */; };
 		199A01DE1918D1DF0081F51D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199A01DD1918D1DF0081F51D /* CoreGraphics.framework */; };
 		199A01E01918D1DF0081F51D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199A01DF1918D1DF0081F51D /* UIKit.framework */; };
 		199A01E61918D1DF0081F51D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 199A01E41918D1DF0081F51D /* InfoPlist.strings */; };
@@ -38,6 +37,7 @@
 		19A0B1D91920A46C00E08E1C /* buttonAccessType21_32@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19A0B1D81920A46C00E08E1C /* buttonAccessType21_32@2x.png */; };
 		19A0B1DC1920D1FA00E08E1C /* FbRegistView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A0B1DB1920D1FA00E08E1C /* FbRegistView.m */; };
 		19A0B1DF192213A100E08E1C /* FriendListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A0B1DE192213A100E08E1C /* FriendListCell.m */; };
+		19A0B1E219222E5A00E08E1C /* AddFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A0B1E119222E5A00E08E1C /* AddFriendViewController.m */; };
 		5658FB06191CD0050016D038 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB01191CD0050016D038 /* MainViewController.m */; };
 		5658FB07191CD0050016D038 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB01191CD0050016D038 /* MainViewController.m */; };
 		5658FB08191CD0050016D038 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB02191CD0050016D038 /* RightViewController.m */; };
@@ -144,6 +144,9 @@
 		19A0B1DB1920D1FA00E08E1C /* FbRegistView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FbRegistView.m; sourceTree = "<group>"; };
 		19A0B1DD192213A100E08E1C /* FriendListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendListCell.h; sourceTree = "<group>"; };
 		19A0B1DE192213A100E08E1C /* FriendListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendListCell.m; sourceTree = "<group>"; };
+		19A0B1E019222E5A00E08E1C /* AddFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendViewController.h; sourceTree = "<group>"; };
+		19A0B1E119222E5A00E08E1C /* AddFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendViewController.m; sourceTree = "<group>"; };
+		19A0B1E91923395000E08E1C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		5658FB00191CD0050016D038 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		5658FB01191CD0050016D038 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		5658FB02191CD0050016D038 /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightViewController.m; sourceTree = "<group>"; };
@@ -199,7 +202,6 @@
 				199A022A191A13150081F51D /* AddressBook.framework in Frameworks */,
 				199A01DE1918D1DF0081F51D /* CoreGraphics.framework in Frameworks */,
 				199A01E01918D1DF0081F51D /* UIKit.framework in Frameworks */,
-				199A01DC1918D1DF0081F51D /* Foundation.framework in Frameworks */,
 				CFB1EC5CCA004D43AB37F42F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +243,7 @@
 		199A01DA1918D1DF0081F51D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				19A0B1E91923395000E08E1C /* CoreFoundation.framework */,
 				5658FB59191CD5770016D038 /* AssetsLibrary.framework */,
 				199A022B191A131C0081F51D /* AddressBookUI.framework */,
 				199A0229191A13150081F51D /* AddressBook.framework */,
@@ -320,6 +323,8 @@
 				199A02121918DA5F0081F51D /* FriendListViewController.m */,
 				199A02141918DA8E0081F51D /* NewFriendViewController.h */,
 				199A02151918DA8E0081F51D /* NewFriendViewController.m */,
+				19A0B1E019222E5A00E08E1C /* AddFriendViewController.h */,
+				19A0B1E119222E5A00E08E1C /* AddFriendViewController.m */,
 			);
 			name = Controllers;
 			path = ../Controllers;
@@ -668,6 +673,7 @@
 				5658FB0A191CD0050016D038 /* LeftViewController.m in Sources */,
 				566D564E19209984003B6AD8 /* QBImagePickerAssetView.m in Sources */,
 				199A02101918DA130081F51D /* LoginViewController.m in Sources */,
+				19A0B1E219222E5A00E08E1C /* AddFriendViewController.m in Sources */,
 				E3FCA51A19220E2000EC0FAB /* GpersonallSettingViewController.m in Sources */,
 				19A0B1C4191E42B400E08E1C /* FbRegistCell.m in Sources */,
 				199A02131918DA5F0081F51D /* FriendListViewController.m in Sources */,

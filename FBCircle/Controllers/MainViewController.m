@@ -12,7 +12,7 @@
 #import "LeftViewController.h"
 #import "RightViewController.h"
 #import <QuartzCore/QuartzCore.h>
-
+#import "GpersonallSettingViewController.h"
 
 #import "MainViewController.h"
 #import "JSONKit.h"
@@ -39,7 +39,7 @@
     LoginViewController *loginV=[[LoginViewController alloc]init];
     UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:loginV];
     
-    [self presentViewController:nav animated:YES completion:NULL];
+   // [self presentViewController:nav animated:YES completion:NULL];
     
     
     self.view.backgroundColor=[UIColor whiteColor];
@@ -68,7 +68,13 @@ NSMutableArray *AddressbookArr   = [SzkAPI AccesstoAddressBookAndGetDetail];
 }
 #pragma mark - Button Handlers
 -(void)leftDrawerButtonPress:(id)sender{
-    [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
+    
+    
+    
+    GpersonallSettingViewController *_personalVC=[[GpersonallSettingViewController alloc]init];
+    [self.navigationController pushViewController:_personalVC animated:YES];
+//
+//[self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
 }
 
 -(void)rightDrawerButtonPress:(id)sender{
