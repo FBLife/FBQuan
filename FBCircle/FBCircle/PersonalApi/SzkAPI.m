@@ -122,8 +122,11 @@
 
 +(NSString *)changestrkongge:(NSString*)_receivestr{
     NSString *str=[NSString string];
-    while ([_receivestr rangeOfString:@" "].length) {
+    while ([_receivestr rangeOfString:@" "].length||[_receivestr rangeOfString:@"+86"].length||[_receivestr rangeOfString:@"-"].length) {
         _receivestr=[_receivestr stringByReplacingOccurrencesOfString:@" " withString:@""];
+        _receivestr=[_receivestr stringByReplacingOccurrencesOfString:@"+86" withString:@""];
+        _receivestr=[_receivestr stringByReplacingOccurrencesOfString:@"-" withString:@""];
+
     }
     
     str=_receivestr;
@@ -131,6 +134,32 @@
     return str;
     
 }
+#pragma mark-获取用户的authcode
+
++(NSString *)getUserAuthcode{
+
+    NSString *string=[[NSUserDefaults standardUserDefaults]objectForKey:AUTHKEY];
+    
+    return string;
+
+
+}
+
+//返回authcode
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -7,7 +7,7 @@
 //
 
 #import "FriendListViewController.h"
-
+#import "FriendListCell.h"
 @interface FriendListViewController ()
 
 @end
@@ -27,10 +27,42 @@
 {
     [super viewDidLoad];
     
-  //  _mainTabV=[[UITableView alloc]initWithFrame:CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)];
+    _mainTabV=[[UITableView alloc]initWithFrame:CGRectMake(0, 64, 320, iPhone5?568-64:480-64)];
+    [self.view addSubview:_mainTabV];
+    _mainTabV.delegate=self;
+    _mainTabV.dataSource=self;
+    
     
     
 }
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+
+    return 1;
+}
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+
+
+    return 10;
+    
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    static NSString *stridentifier=@"identifier";
+    
+    FriendListCell *cell=[tableView dequeueReusableCellWithIdentifier:stridentifier];
+    
+    if (!cell) {
+        cell=[[FriendListCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:stridentifier];
+        
+    }
+    
+    
+    return cell;
+
+}
+
 
 - (void)didReceiveMemoryWarning
 {

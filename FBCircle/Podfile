@@ -9,3 +9,15 @@ pod 'MMDrawerController', '~> 0.5.5'
 pod 'UMengFeedback', '~> 1.4.1'
 
 pod 'UMeng', '~> 2.2.1'
+<<<<<<< HEAD
+=======
+
+pod 'AsyncImageView', '~> 1.5.1'
+
+
+
+
+
+
+
+>>>>>>> FETCH_HEAD

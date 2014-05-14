@@ -12,7 +12,7 @@ typedef void(^LoginViewBloc)(long flag);//传方法的，如果是101，就是�
 #import <UIKit/UIKit.h>
 
 
-@interface FbLoginView : UIView
+@interface FbLoginView : UIView<UITextFieldDelegate>
 
 @property(strong,nonatomic)UIImageView *imgLogo;//中间的大logo
 
@@ -33,6 +33,7 @@ typedef void(^LoginViewBloc)(long flag);//传方法的，如果是101，就是�
 @property(copy,nonatomic)LoginViewBloc  bloc;
 
 -(void)setBloc:(LoginViewBloc)chuanrubloc;
+
 
 
 @end

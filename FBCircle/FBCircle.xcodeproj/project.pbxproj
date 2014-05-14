@@ -29,8 +29,15 @@
 		199A026D191B7EC60081F51D /* SzkLoadData.m in Sources */ = {isa = PBXBuildFile; fileRef = 199A026C191B7EC60081F51D /* SzkLoadData.m */; };
 		19A0B1C4191E42B400E08E1C /* FbRegistCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A0B1C3191E42B400E08E1C /* FbRegistCell.m */; };
 		19A0B1C7191E626C00E08E1C /* RegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A0B1C6191E626C00E08E1C /* RegistViewController.m */; };
-		19A0B1CA191E62E800E08E1C /* FBQuanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A0B1C9191E62E800E08E1C /* FBQuanViewController.m */; };
 		19A0B1CD19207D4100E08E1C /* FriendAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A0B1CC19207D4100E08E1C /* FriendAttribute.m */; };
+		19A0B1D019209EDB00E08E1C /* FBQuanLogInLogo216_178@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19A0B1CE19209EDB00E08E1C /* FBQuanLogInLogo216_178@2x.png */; };
+		19A0B1D119209EDB00E08E1C /* loginbackground640_1136@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19A0B1CF19209EDB00E08E1C /* loginbackground640_1136@2x.png */; };
+		19A0B1D31920A03700E08E1C /* inputtext532_182@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19A0B1D21920A03700E08E1C /* inputtext532_182@2x.png */; };
+		19A0B1D51920A12800E08E1C /* logInMark528_88@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19A0B1D41920A12800E08E1C /* logInMark528_88@2x.png */; };
+		19A0B1D71920A38D00E08E1C /* FBQuanRegist640_87@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19A0B1D61920A38D00E08E1C /* FBQuanRegist640_87@2x.png */; };
+		19A0B1D91920A46C00E08E1C /* buttonAccessType21_32@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19A0B1D81920A46C00E08E1C /* buttonAccessType21_32@2x.png */; };
+		19A0B1DC1920D1FA00E08E1C /* FbRegistView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A0B1DB1920D1FA00E08E1C /* FbRegistView.m */; };
+		19A0B1DF192213A100E08E1C /* FriendListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A0B1DE192213A100E08E1C /* FriendListCell.m */; };
 		5658FB06191CD0050016D038 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB01191CD0050016D038 /* MainViewController.m */; };
 		5658FB07191CD0050016D038 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB01191CD0050016D038 /* MainViewController.m */; };
 		5658FB08191CD0050016D038 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658FB02191CD0050016D038 /* RightViewController.m */; };
@@ -115,6 +122,8 @@
 		56A2520D19221080005B85E8 /* FullyLoaded.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A2520C19221080005B85E8 /* FullyLoaded.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		56A2520E19221080005B85E8 /* FullyLoaded.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A2520C19221080005B85E8 /* FullyLoaded.m */; };
 		CFB1EC5CCA004D43AB37F42F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA336E5564984EDCBE0DB938 /* libPods.a */; };
+		E3FCA51A19220E2000EC0FAB /* GpersonallSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FCA51919220E2000EC0FAB /* GpersonallSettingViewController.m */; };
+		E3FCA51B19220E2000EC0FAB /* GpersonallSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FCA51919220E2000EC0FAB /* GpersonallSettingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,10 +172,18 @@
 		19A0B1C3191E42B400E08E1C /* FbRegistCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FbRegistCell.m; sourceTree = "<group>"; };
 		19A0B1C5191E626C00E08E1C /* RegistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistViewController.h; sourceTree = "<group>"; };
 		19A0B1C6191E626C00E08E1C /* RegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistViewController.m; sourceTree = "<group>"; };
-		19A0B1C8191E62E800E08E1C /* FBQuanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBQuanViewController.h; sourceTree = "<group>"; };
-		19A0B1C9191E62E800E08E1C /* FBQuanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBQuanViewController.m; sourceTree = "<group>"; };
 		19A0B1CB19207D4100E08E1C /* FriendAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendAttribute.h; sourceTree = "<group>"; };
 		19A0B1CC19207D4100E08E1C /* FriendAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendAttribute.m; sourceTree = "<group>"; };
+		19A0B1CE19209EDB00E08E1C /* FBQuanLogInLogo216_178@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FBQuanLogInLogo216_178@2x.png"; sourceTree = "<group>"; };
+		19A0B1CF19209EDB00E08E1C /* loginbackground640_1136@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loginbackground640_1136@2x.png"; sourceTree = "<group>"; };
+		19A0B1D21920A03700E08E1C /* inputtext532_182@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inputtext532_182@2x.png"; sourceTree = "<group>"; };
+		19A0B1D41920A12800E08E1C /* logInMark528_88@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logInMark528_88@2x.png"; sourceTree = "<group>"; };
+		19A0B1D61920A38D00E08E1C /* FBQuanRegist640_87@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FBQuanRegist640_87@2x.png"; sourceTree = "<group>"; };
+		19A0B1D81920A46C00E08E1C /* buttonAccessType21_32@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonAccessType21_32@2x.png"; sourceTree = "<group>"; };
+		19A0B1DA1920D1FA00E08E1C /* FbRegistView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FbRegistView.h; sourceTree = "<group>"; };
+		19A0B1DB1920D1FA00E08E1C /* FbRegistView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FbRegistView.m; sourceTree = "<group>"; };
+		19A0B1DD192213A100E08E1C /* FriendListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendListCell.h; sourceTree = "<group>"; };
+		19A0B1DE192213A100E08E1C /* FriendListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendListCell.m; sourceTree = "<group>"; };
 		5658FB00191CD0050016D038 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		5658FB01191CD0050016D038 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		5658FB02191CD0050016D038 /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightViewController.m; sourceTree = "<group>"; };
@@ -234,6 +251,8 @@
 		56A2520C19221080005B85E8 /* FullyLoaded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullyLoaded.m; sourceTree = "<group>"; };
 		56A2520F192210B3005B85E8 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
 		8B611DE4DD6843ADB67DE824 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		E3FCA51819220E2000EC0FAB /* GpersonallSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GpersonallSettingViewController.h; sourceTree = "<group>"; };
+		E3FCA51919220E2000EC0FAB /* GpersonallSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GpersonallSettingViewController.m; sourceTree = "<group>"; };
 		FA336E5564984EDCBE0DB938 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -303,6 +322,7 @@
 		199A01E11918D1DF0081F51D /* FBCircle */ = {
 			isa = PBXGroup;
 			children = (
+				E3FCA51619220E2000EC0FAB /* GM */,
 				566D561B19209984003B6AD8 /* ZSNController */,
 				566D560F19206F2B003B6AD8 /* publicImages */,
 				199A0225191A11C40081F51D /* PersonalApi */,
@@ -378,6 +398,10 @@
 				19431EFF191DE2FE006C58DB /* FbLoginView.m */,
 				19A0B1C2191E42B400E08E1C /* FbRegistCell.h */,
 				19A0B1C3191E42B400E08E1C /* FbRegistCell.m */,
+				19A0B1DA1920D1FA00E08E1C /* FbRegistView.h */,
+				19A0B1DB1920D1FA00E08E1C /* FbRegistView.m */,
+				19A0B1DD192213A100E08E1C /* FriendListCell.h */,
+				19A0B1DE192213A100E08E1C /* FriendListCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -411,8 +435,6 @@
 				5682FFA919233B830077554D /* pinyin.c */,
 				5682FFAA19233B830077554D /* pinyin.h */,
 				19431F01191DE7B3006C58DB /* FBQuanAPI.h */,
-				19A0B1C8191E62E800E08E1C /* FBQuanViewController.h */,
-				19A0B1C9191E62E800E08E1C /* FBQuanViewController.m */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -431,6 +453,12 @@
 		566D560F19206F2B003B6AD8 /* publicImages */ = {
 			isa = PBXGroup;
 			children = (
+				19A0B1D81920A46C00E08E1C /* buttonAccessType21_32@2x.png */,
+				19A0B1D61920A38D00E08E1C /* FBQuanRegist640_87@2x.png */,
+				19A0B1D41920A12800E08E1C /* logInMark528_88@2x.png */,
+				19A0B1D21920A03700E08E1C /* inputtext532_182@2x.png */,
+				19A0B1CE19209EDB00E08E1C /* FBQuanLogInLogo216_178@2x.png */,
+				19A0B1CF19209EDB00E08E1C /* loginbackground640_1136@2x.png */,
 				566D561019206F3A003B6AD8 /* FBCircleNavagationImage@2x.png */,
 				5682FF9419231B9B0077554D /* FBQuanBackImage@2x.png */,
 			);
@@ -578,6 +606,21 @@
 				56A2520C19221080005B85E8 /* FullyLoaded.m */,
 			);
 			path = AsyncImageView;
+		E3FCA51619220E2000EC0FAB /* GM */ = {
+			isa = PBXGroup;
+			children = (
+				E3FCA51719220E2000EC0FAB /* C */,
+			);
+			path = GM;
+			sourceTree = "<group>";
+		};
+		E3FCA51719220E2000EC0FAB /* C */ = {
+			isa = PBXGroup;
+			children = (
+				E3FCA51819220E2000EC0FAB /* GpersonallSettingViewController.h */,
+				E3FCA51919220E2000EC0FAB /* GpersonallSettingViewController.m */,
+			);
+			path = C;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -657,7 +700,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19A0B1D91920A46C00E08E1C /* buttonAccessType21_32@2x.png in Resources */,
 				566D561119206F3A003B6AD8 /* FBCircleNavagationImage@2x.png in Resources */,
+
 				566D56981920F34C003B6AD8 /* choosePictureFinishOk@2x.png in Resources */,
 				566D56A1192110CE003B6AD8 /* ChoosePictureBackGroundImage@2x.png in Resources */,
 				566D566A1920AA1B003B6AD8 /* WriteSwitchOutImage@2x.png in Resources */,
@@ -670,12 +715,20 @@
 				566D567A1920BFB6003B6AD8 /* WriteChoosePictures@2x.png in Resources */,
 				566D569E192106AB003B6AD8 /* choosePhotoMarkNo@2x.png in Resources */,
 				566D56901920F34C003B6AD8 /* ChoosePicturePreViewNo@2x.png in Resources */,
+				19A0B1D51920A12800E08E1C /* logInMark528_88@2x.png in Resources */,
+				199A01E61918D1DF0081F51D /* InfoPlist.strings in Resources */,
+				19A0B1D119209EDB00E08E1C /* loginbackground640_1136@2x.png in Resources */,
+				19A0B1D31920A03700E08E1C /* inputtext532_182@2x.png in Resources */,
+				566D565E19209984003B6AD8 /* city.plist in Resources */,
+				566D565019209984003B6AD8 /* QBImagePickerController.bundle in Resources */,
+				19A0B1D019209EDB00E08E1C /* FBQuanLogInLogo216_178@2x.png in Resources */,
 				566D566019209984003B6AD8 /* locationMarkImage@2x.png in Resources */,
 				5682FFA4192333AC0077554D /* PreviewChooseMarkOk@2x.png in Resources */,
 				5682FF9C192321590077554D /* barbuttonicon_back@2x.png in Resources */,
 				566D56921920F34C003B6AD8 /* choosePictureFinishNo@2x.png in Resources */,
 				5682FF9519231B9B0077554D /* FBQuanBackImage@2x.png in Resources */,
 				566D565A19209984003B6AD8 /* 640_146@2x.png in Resources */,
+				19A0B1D71920A38D00E08E1C /* FBQuanRegist640_87@2x.png in Resources */,
 				199A01EE1918D1DF0081F51D /* Images.xcassets in Resources */,
 				566D56681920AA1B003B6AD8 /* WriteSwitchBackImage@2x.png in Resources */,
 				566D565C19209984003B6AD8 /* logIn_close@2x.png in Resources */,
@@ -757,6 +810,7 @@
 				5658FB0A191CD0050016D038 /* LeftViewController.m in Sources */,
 				566D564E19209984003B6AD8 /* QBImagePickerAssetView.m in Sources */,
 				199A02101918DA130081F51D /* LoginViewController.m in Sources */,
+				E3FCA51A19220E2000EC0FAB /* GpersonallSettingViewController.m in Sources */,
 				19A0B1C4191E42B400E08E1C /* FbRegistCell.m in Sources */,
 				199A02131918DA5F0081F51D /* FriendListViewController.m in Sources */,
 				5658FB06191CD0050016D038 /* MainViewController.m in Sources */,
@@ -773,12 +827,14 @@
 				566D565819209984003B6AD8 /* QBImagePickerVideoInfoView.m in Sources */,
 				199A026D191B7EC60081F51D /* SzkLoadData.m in Sources */,
 				199A01E81918D1DF0081F51D /* main.m in Sources */,
+				19A0B1DC1920D1FA00E08E1C /* FbRegistView.m in Sources */,
 				566D566219209984003B6AD8 /* WriteBlogViewController.m in Sources */,
 				566D564819209984003B6AD8 /* ChooseCountryViewController.m in Sources */,
 				19A0B1CD19207D4100E08E1C /* FriendAttribute.m in Sources */,
 				566D566419209984003B6AD8 /* MyViewController.m in Sources */,
 				19A0B1CA191E62E800E08E1C /* FBQuanViewController.m in Sources */,
 				56A251ED1921D1C3005B85E8 /* QBShowImageDetailViewController.m in Sources */,
+				19A0B1DF192213A100E08E1C /* FriendListCell.m in Sources */,
 				19431F00191DE2FE006C58DB /* FbLoginView.m in Sources */,
 				566D564419209984003B6AD8 /* ChooseAreaViewController.m in Sources */,
 				199A02161918DA8E0081F51D /* NewFriendViewController.m in Sources */,
@@ -811,6 +867,7 @@
 				5658FB09191CD0050016D038 /* RightViewController.m in Sources */,
 				566D565719209984003B6AD8 /* QBImagePickerGroupCell.m in Sources */,
 				566D566319209984003B6AD8 /* WriteBlogViewController.m in Sources */,
+				E3FCA51B19220E2000EC0FAB /* GpersonallSettingViewController.m in Sources */,
 				566D565919209984003B6AD8 /* QBImagePickerVideoInfoView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
